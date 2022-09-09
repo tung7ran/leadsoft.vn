@@ -164,26 +164,6 @@ img {
   font-family: UTM_Avo-Italic;
   src: url("../font/UTM AvoItalic.ttf");
 }
-.e11_135 {
-  background-color: rgb(31, 31, 31);
-  width: 1440px;
-  height: 756px;
-  position: absolute;
-  left: 0px;
-  top: 80px;
-}
-
-.e4_11 {
-  width: 1440px;
-  height: 755px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background-image: url(images/what_is_your_website_design_process_blog_post_feature_image_36119_01_1024x537_1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .e4_27 {
   transform: rotate(-180deg);
   width: 45px;
@@ -294,7 +274,7 @@ img {
 }
 .header-outside-nav__list {
   display: flex;
-  margin-left: 6rem;
+  justify-content: center;
 }
 .header-outside-nav__list--item {
   margin-right: 2.6rem;
@@ -305,4 +285,13 @@ img {
   letter-spacing: 0;
   height: 2.5rem;
   min-width: 6.4rem;
+}
+
+.home-sidebar {
+  position: relative;
+  background-color: #1f1f1f;
+  height: 756px;
+}
+.home-sidebar-image {
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */

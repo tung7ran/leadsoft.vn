@@ -1,23 +1,7 @@
 @import 'variables';
 
-.e11_135 { 
-	background-color:rgba(30.81249911338091, 30.81249911338091, 30.81249911338091, 1);
-	width:1440px;
-	height:756px;
-	position:absolute;
-	left:0px;
-	top:80px;
-}
-.e4_11 { 
-	width:1440px;
-	height:755px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	background-image:url(images/what_is_your_website_design_process_blog_post_feature_image_36119_01_1024x537_1.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
+
+
 .e4_27 { 
 	transform: rotate(-180deg);
 	width:45px;
@@ -121,9 +105,11 @@
         &-nav {
             &__list {
                 display: flex;
-                margin-left: 6rem;
+				justify-content: center;
+
                 &--item {
                     margin-right: 2.6rem;
+
                     &-link {
                         font-size: 1.8rem;
                         color:  $black;
@@ -135,4 +121,13 @@
             }
         }
     }
+}
+.home-sidebar {
+	position: relative;
+	background-color:#1f1f1f;
+	height:756px;
+
+	&-image {
+		height: 100%;
+	}
 }
