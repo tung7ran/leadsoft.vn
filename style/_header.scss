@@ -1,0 +1,138 @@
+@import 'variables';
+
+.e11_135 { 
+	background-color:rgba(30.81249911338091, 30.81249911338091, 30.81249911338091, 1);
+	width:1440px;
+	height:756px;
+	position:absolute;
+	left:0px;
+	top:80px;
+}
+.e4_11 { 
+	width:1440px;
+	height:755px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/what_is_your_website_design_process_blog_post_feature_image_36119_01_1024x537_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e4_27 { 
+	transform: rotate(-180deg);
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:71px;
+	top:400px;
+}
+.e4_24 { 
+	border-radius:500px;
+	background-color:rgba(65.87499797344208, 65.87499797344208, 65.87499797344208, 0.7099999785423279);
+	width:37.94117736816406px;
+	height:37.94117736816406px;
+	position:absolute;
+	left:1.7647058963775635px;
+	top:3.529411792755127px;
+}
+.e4_25 { 
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ei4_25_124_372 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:14.0625px;
+	height:24.375px;
+	position:absolute;
+	left:15.937498092651367px;
+	top:10.3125px;
+}
+.e11_207 { 
+	transform: rotate(-180deg);
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:1414px;
+	top:400px;
+}
+.e11_203 { 
+	transform: rotate(-180deg);
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:45px;
+	top:45px;
+}
+.ei11_203_4_24 { 
+	border-radius:500px;
+	background-color:rgba(65.87499797344208, 65.87499797344208, 65.87499797344208, 0.7099999785423279);
+	width:37.94117736816406px;
+	height:37.94117736816406px;
+	position:absolute;
+	left:1.7647058963775635px;
+	top:3.529411792755127px;
+}
+.ei11_203_4_25 { 
+	width:45px;
+	height:45px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.ei11_203_4_25_124_372 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:14.0625px;
+	height:24.375px;
+	position:absolute;
+	left:15.937498092651367px;
+	top:10.3125px;
+}
+.e51_16 { 
+	color:rgba(255, 255, 255, 1);
+	width:873px;
+	height:58px;
+	position:absolute;
+	left:200px;
+	top:148px;
+	font-family:Inter;
+	text-align:left;
+	font-size:48px;
+	letter-spacing:0;
+}
+
+.header {
+    border-bottom: 0.3rem solid #43baff;
+    &-outside {
+        background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0);
+        height:7.7rem;
+        align-items: center;
+
+        &-logo {
+            &__image {
+                width:210px;
+                height:26.367px;
+                float: right;
+                margin-right: 1.2rem;
+            }
+        }
+        &-nav {
+            &__list {
+                display: flex;
+                margin-left: 6rem;
+                &--item {
+                    margin-right: 2.6rem;
+                    &-link {
+                        font-size: 1.8rem;
+                        color:  $black;
+                        letter-spacing: 0;
+                        height: 2.5rem;
+                        min-width: 6.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
