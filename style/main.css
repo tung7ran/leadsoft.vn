@@ -159,4 +159,247 @@ img {
 @font-face {
   font-family: UTM_Avo-Italic;
   src: url("../font/UTM AvoItalic.ttf");
+}
+.e131_27 {
+  overflow: hidden;
+}
+
+.e131_27 {
+  width: 1440px;
+  height: 836px;
+  position: absolute;
+}
+
+.e1_3 {
+  width: 210px;
+  height: 26.3677139282px;
+  position: absolute;
+  left: 150px;
+  top: 27px;
+  background-image: url(images/logo_lead_soft_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.e1_4 {
+  color: rgb(0, 0, 0);
+  width: 91px;
+  height: 25px;
+  position: absolute;
+  left: 442px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_2 {
+  color: rgb(0, 0, 0);
+  width: 91px;
+  height: 25px;
+  position: absolute;
+  left: 554px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_4 {
+  color: rgb(0, 0, 0);
+  width: 69px;
+  height: 25px;
+  position: absolute;
+  left: 854px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_8 {
+  color: rgb(0, 0, 0);
+  width: 127px;
+  height: 25px;
+  position: absolute;
+  left: 944px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_7 {
+  color: rgb(0, 0, 0);
+  width: 167px;
+  height: 25px;
+  position: absolute;
+  left: 666px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_5 {
+  color: rgb(0, 0, 0);
+  width: 65px;
+  height: 25px;
+  position: absolute;
+  left: 1092px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_6 {
+  color: rgb(0, 0, 0);
+  width: 64px;
+  height: 25px;
+  position: absolute;
+  left: 1178px;
+  top: 31px;
+  font-family: UTM Avo;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.e4_9 {
+  background-color: rgb(67, 186, 255);
+  width: 1440px;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  top: 77px;
+}
+
+.e11_135 {
+  background-color: rgb(31, 31, 31);
+  width: 1440px;
+  height: 756px;
+  position: absolute;
+  left: 0px;
+  top: 80px;
+}
+
+.e4_11 {
+  width: 1440px;
+  height: 755px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(images/what_is_your_website_design_process_blog_post_feature_image_36119_01_1024x537_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.e4_27 {
+  transform: rotate(-180deg);
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 71px;
+  top: 400px;
+}
+
+.e4_24 {
+  border-radius: 500px;
+  background-color: rgba(66, 66, 66, 0.7099999785);
+  width: 37.9411773682px;
+  height: 37.9411773682px;
+  position: absolute;
+  left: 1.7647058964px;
+  top: 3.5294117928px;
+}
+
+.e4_25 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.ei4_25_124_372 {
+  background-color: rgb(255, 255, 255);
+  width: 14.0625px;
+  height: 24.375px;
+  position: absolute;
+  left: 15.9374980927px;
+  top: 10.3125px;
+}
+
+.e11_207 {
+  transform: rotate(-180deg);
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 1414px;
+  top: 400px;
+}
+
+.e11_203 {
+  transform: rotate(-180deg);
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 45px;
+  top: 45px;
+}
+
+.ei11_203_4_24 {
+  border-radius: 500px;
+  background-color: rgba(66, 66, 66, 0.7099999785);
+  width: 37.9411773682px;
+  height: 37.9411773682px;
+  position: absolute;
+  left: 1.7647058964px;
+  top: 3.5294117928px;
+}
+
+.ei11_203_4_25 {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.ei11_203_4_25_124_372 {
+  background-color: rgb(255, 255, 255);
+  width: 14.0625px;
+  height: 24.375px;
+  position: absolute;
+  left: 15.9374980927px;
+  top: 10.3125px;
+}
+
+.e51_16 {
+  color: rgb(255, 255, 255);
+  width: 873px;
+  height: 58px;
+  position: absolute;
+  left: 200px;
+  top: 148px;
+  font-family: Inter;
+  text-align: left;
+  font-size: 48px;
+  letter-spacing: 0;
+}
+
+.e89_282 {
+  background-color: rgba(217, 217, 217, 0);
+  width: 1440px;
+  height: 77px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }/*# sourceMappingURL=main.css.map */
