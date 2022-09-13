@@ -31,20 +31,45 @@ $res_pcmedium : "(max-width: 1366px)";
 
 @font-face {
   font-family: UTM-Avo;
-  src: url('../font/UTM\ Avo.ttf');
+  src: url("../font/UTM-Avo.ttf");
 }
 
 @font-face {
   font-family: UTM_AvoBold;
-  src: url('../font/UTM\ AvoBold.ttf');
+  src: url('../font/AvoBold.ttf');
 }
 
 @font-face {
   font-family: UTM_AvoBold_Italic;
-  src: url('../font/UTM\ AvoBold_Italic.ttf');
+  src: url('../font/AvoBold_Italic.ttf');
 }
 
 @font-face {
   font-family: UTM_Avo-Italic;
-  src: url('../font/UTM\ AvoItalic.ttf');
+  src: url('../font/AvoItalic.ttf');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../font/Inter.ttf');
+}
+
+@font-face {
+  font-family: Inter-Regular;
+  src: url('../font/Inter-Regular.otf');
+}
+
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url('../font/Inter-SemiBold.otf');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../font/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../font/Roboto-Bold.ttf');
 }
