@@ -6,29 +6,724 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ</title>
     <link rel="icon" type="image/png" sizes="" href="./images/logo/logo.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
     <div class="wrap-body">
         <!-- Header -->
         <header class="header">
-
+            <div class="container">
+                <div class="header-outside row">
+                    <div class="header-outside-logo col-xl-3">
+                        <div class="header-outside-logo__image">
+                            <a href="./index.html">
+                                <img src="./images/logo/logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-outside-nav col-xl-9">
+                        <ul class="header-outside-nav__list">
+                            <li class="header-outside-nav__list--item">
+                                <a href="./index.html" class="header-outside-nav__list--item-link">
+                                    Trang Chủ
+                                </a>
+                            </li>
+                            <li class="header-outside-nav__list--item">
+                                <a href="" class="header-outside-nav__list--item-link header-active">
+                                    Giới Thiệu
+                                </a>
+                            </li>
+                            <li class="header-outside-nav__list--item">
+                                <a href="" class="header-outside-nav__list--item-link">
+                                    Kho giao diện Web
+                                </a>
+                            </li>
+                            <li class="header-outside-nav__list--item">
+                                <a href="./service.html" class="header-outside-nav__list--item-link">
+                                    Dịch vụ
+                                </a>
+                            </li>
+                            <li class="header-outside-nav__list--item">
+                                <a href="" class="header-outside-nav__list--item-link">
+                                    Kiến thức web
+                                </a>
+                            </li>
+                            <li class="header-outside-nav__list--item">
+                                <a href="" class="header-outside-nav__list--item-link">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="header-outside-nav__list--item">
+                                <a href="./contact.html" class="header-outside-nav__list--item-link">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
+        
+        <div class="banner">
+            <img src="./images/banner-03.jpg" alt="about-us-banner">
+        </div>
+
         <!-- Container -->
         <div class="content-about">
-
+            <div class="container">
+                <div class="content-about-title">
+                    <div class="content-about-title__line"></div>
+                    <h2  class="content-about-title__heading">VỀ LEADSOFT</h2>
+                    <span class="content-about-title__text">Không ngừng vươn lên</span>
+                </div>
+                <div class="row">
+                    <div class="content-about-left col-xl-6 col-md-6">  
+                        <p class="content-about-left__info">LeadSoft là công ty thiết kế website cao cấp có tuổi đời 8+ năm trong ngành, hoạt động chính thức từ 2013 – trước đó là một nhóm Freelancer. Hiện LeadSoft là công ty chính trong hệ sinh thái công ty phần mềm Software, Host, SEO <br><br>
+                            Mona Media hoạt động chính trong các mảng: <br><br>
+                            Website cao cấp cho khách hàng, giao diện thiết kế độc quyền, chỉn chu, chuẩn về UX, tính năng code theo giải pháp đã tư vấn cho khách hàng. <br><br>
+                            Web-app, phần mềm quản lý viết riêng, giải quyết các vấn đề tồn đọng và vấn đề tương lai phát triển cho doanh nghiệp <br><br>
+                            Là sân sau hỗ trợ các đối tác cùng ngành thiết kế website và phần mềm khác nhờ vào đội ngũ lập trình và thiết kế chuyên môn cao, chúng tôi đã hỗ trợ các anh em đồng nghiệp khác trong nghề đưa dự án tới tay khách hàng <br><br>
+                            SEO và Marketing online cho các dự án khách hàng của chính công ty <br><br>
+                            Hạ tầng cơ sở dữ liệu, lưu trữ data Hosting/ VPS/ Cloud <br><br>
+                            Nghiên cứu và ra đời các bộ phần mềm có sẵn để phục vụ trực tiếp vào nhu cầu của khách hàng Việt Nam như phần mềm nhập hàng Trung Quốc, phần mềm dạy học trực tuyến elearning, phần mềm quản lý tiệm nail, tóc, làm đẹp, Ngay từ những ngày đầu hoạt động, Mona Media đã chọn cho mình một phân khúc riêng, khác biệt với hàng ngàn công ty dịch vụ thiết kế website trên thị trường: phân khúc của sự hiệu quả.
+                        </p>
+                    </div>
+                    <div class="content-about-right col-xl-6 col-md-6">
+                        <div class="content-about-right__outside">
+                            <div class="content-about-right__outside--image">
+                                <img src="./images/Stack.png" alt="">
+                            </div>
+                            <div class="content-about-right__outside--text">
+                                <p class="content-about-right__outside--text-number">2000+</p>
+                                <span>Dự án đã hoàn thành</span>
+                            </div>
+                        </div>
+                        <div class="content-about-right__outside">
+                            <div class="content-about-right__outside--image">
+                                <img src="./images/User.png" alt="">
+                            </div>
+                            <div class="content-about-right__outside--text">
+                                <p class="content-about-right__outside--text-number">2000+</p>
+                                <span>Khách hàng</span>
+                            </div>
+                        </div>
+                        <div class="content-about-right__outside">
+                            <div class="content-about-right__outside--image">
+                                <img src="./images/Duplicate.png" alt="">
+                            </div>
+                            <div class="content-about-right__outside--text">
+                                <p class="content-about-right__outside--text-number">2000+</p>
+                                <span>File HTML đã cắt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-about-outside">
+                    <div class="content-about-outside-title">
+                        <div class="content-about-outside-title__line"></div>
+                        <h2  class="content-about-outside-title__heading">Sứ mệnh</h2>
+                    </div>
+                    <p class="content-about-outside__info">
+                        LeadSoft cam kết chất lượng thiết kế website chuyên nghiệp, hấp dẫn, mang lại lợi ích cho khách hàng, giúp các các đơn vị, doanh nghiệp thu hút khách hàng, truyền thông hiệu quả. Từ đó nâng cao thương hiệu và định vị doanh nghiệp trong lòng khách hàng của bạn. <br><br>
+                        LeadSoft  không ngừng cập nhật các công nghệ, kỹ thuật cùng các kiến thức mới nhằm nâng cao hiệu quả, đóng góp cho sự phát triển của doanh nghiệp đối tác và sự phát triển của xã hội.
+                    </p>
+                    <div class="content-about-outside-title">
+                        <div class="content-about-outside-title__line"></div>
+                        <h2  class="content-about-outside-title__heading mt-9">Tầm Nhìn</h2>
+                    </div>
+                    <p class="content-about-outside__info">
+                        Nhận thấy sự phát triển của công nghệ hiện nay cũng như xu hướng phát triển trong tương lai, cùng những điều kiện sẵn có, chúng tôi đang ngày càng nỗ lực mở rộng và không ngừng thay đổi để phù hợp với sự phát triển của xã hội. <br><br> 
+                        Trong thời đại công nghệ thông tin ngày càng lớn mạnh, các dịch vụ trên không gian mạng được rất nhiều khách hàng chú trọng, tìm hiểu. LeadSoft  sẽ nỗ lực trở thành đơn vị số 1 về cung cấp dịch vụ website, thiết kế website chuyên nghiệp hiệu quả, hướng đến lợi ích tối đa cho khách hàng.<br><br>
+                        LeadSoft  phụng sự bằng trái tim, cống hiến cho xã hội bằng ngành nghề công nghệ và sức lao động chất xám giá rẻ.
+                    </p>
+                </div>
+            </div>
+            <div class="home-projects">
+                <h3 class="home-projects-heading pd-0">Các dự án tiêu biểu</h3>
+                <ul class="home-projects-top">
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-01.png" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                </ul>
+                <ul class="home-projects-between">
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-01.png" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                </ul>
+                <ul class="home-projects-bottom">
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-01.png" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="price-list">
+                <div class="container"> 
+                    <div class="price-list-heading">BẢNG GIÁ TRỌN GÓI <span>- UY TÍN HÀNG ĐẦU</span></div>
+                    <p class="price-list-text">Công nghệ web hàng đầu – Tiết kiệm Chi Phí – Bàn giao web nhanh chóng</p>
+                    <div class="price-list-outside row">
+                        <div class="col-xl-3">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
+                                <div class="price-list-outside__inside--type home-background-seo">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-seo">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-support">
+                                    <div class="price-list-image">
+                                        <img src="./images/bgColor.png" alt="">
+                                    </div>
+                                    4.800.000 <br> <span>GÓI WEB HỖ TRỢ <br> BÁN HÀNG</span>
+                                </div>
+                                <div class="price-list-outside__inside--type home-background-support">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-support">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="consulting-team">
+                <div class="container">
+                    <div class="consulting-team-heading">CHUYÊN VIÊN TƯ VẤN</div>
+                    <p class="consulting-team-text">Kinh nghiệm, năng lực và thương hiệu của chúng tôi đã được khẳng định trên thị trường</p>
+                    <div class="consulting-team-outside">
+                        <ul class="consulting-team-outside__list">
+                            <li class="consulting-team-outside__list--item col-xl-2">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <!-- Footer -->
         <footer class="footer">
-
+            <div class="footer-outside">
+                <div class="footer-outside-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="footer-outside-top__location">
+                                    <div class="footer-outside-top__location--image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="47.6" fill="#FFF" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="footer-outside-top__location--info">
+                                        <h3 class="footer-outside-top__location--info-heading">ĐỊA CHỈ</h3>
+                                        <p class="footer-outside-top__location--info-text">Số 131 Trần Phú, Hà Đông, Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="footer-outside-top__tel">
+                                    <div class="footer-outside-top__tel--image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42.04" height="39" fill="#FFF" class="bi bi-telephone" viewBox="0 0 16 16">
+                                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                          </svg>
+                                    </div>
+                                    <div class="footer-outside-top__tel--info">
+                                        <h3 class="footer-outside-top__tel--info-heading">ĐIỆN THOẠI</h3>
+                                        <p class="footer-outside-top__tel--info-text">0976854146</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="footer-outside-top__email">
+                                    <div class="footer-outside-top__email--image">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                    <div class="footer-outside-top__email--info">
+                                        <h3 class="footer-outside-top__email--info-heading">EMAIL</h3>
+                                        <p class="footer-outside-top__email--info-text">Leadsoft.lsw@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-outside-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4">
+                                <div class="footer-outside-bottom__info">
+                                    <h3 class="footer-outside-bottom__info--heading">VỀ CHÚNG TÔI</h3>
+                                  <div class="footer-outside-bottom__info--logo">
+                                    <img src="./images/logo/logo.png" alt="">
+                                  </div>
+                                  <p class="footer-outside-bottom__info--text">Lorem ipsum dolor sit amet, 
+                                      consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat . 
+                                      wisi enim ad minim veniam, quis tation. sit amet, consec tetuer. ipsum dolor sit amet, consectetuer adipiscing.ipsum dolor sit .
+                                  </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="footer-outside-bottom__contact">
+                                    <h3 class="footer-outside-bottom__contact--heading">LIÊN HỆ</h3>
+                                    <ul class="footer-outside-bottom__contact--list">
+                                        <li class="footer-outside-bottom__contact--list-item">
+                                            Bộ phận CSKH : <br> 024 XX XXX 900 - 098X XX XX 00 (24/7)
+                                        </li>
+                                        <li class="footer-outside-bottom__contact--list-item">
+                                            Bộ phận gia hạn: 098X XXX X87
+                                        </li>
+                                        <li class="footer-outside-bottom__contact--list-item">
+                                            Bộ phận Marketing: 039X XXX X00
+                                        </li>
+                                        <li class="footer-outside-bottom__contact--list-item">
+                                            Hotline phản ánh dịch vụ: 032X XXX X00
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="footer-outside-bottom__link">
+                                    <h3 class="footer-outside-bottom__link--heading">LIÊN KẾT MẠNG XÃ HỘI</h3>
+                                    <ul class="footer-outside-bottom__link--social">
+                                        <li class="footer-outside-bottom__link--social-item">
+                                            <a href="" class="footer-outside-bottom__link--social-item--link">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                  </svg>
+                                            </a>
+                                        </li>
+                                        <li class="footer-outside-bottom__link--social-item">
+                                            <a href="" class="footer-outside-bottom__link--social-item--link">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                                  </svg>
+                                            </a>
+                                        </li>
+                                        <li class="footer-outside-bottom__link--social-item">
+                                            <a href="" class="footer-outside-bottom__link--social-item--link">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-google" viewBox="0 0 16 16">
+                                                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                                                  </svg>
+                                            </a>
+                                        </li>
+                                        <li class="footer-outside-bottom__link--social-item">
+                                            <a href="" class="footer-outside-bottom__link--social-item--link">
+                                                <img src="./images/snapchat.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-outside-bottom__image">
+                        <img src="./images/image 29.png" alt="">
+                    </div>
+                    <div class="footer-outside-bottom__outside container">
+                        <div class="footer-outside-bottom__outside--left">
+                            ©2022 Bản quyền thuộc về Leadsoft
+                        </div>
+                        <div class="footer-outside-bottom__outside--right">
+                            Điều khoản & Điều kiện   /   Chính sách bảo mật   /   Liên hệ với chúng tôi
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

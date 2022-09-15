@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="icon" type="image/png" sizes="" href="./images/logo/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
           integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./sass/main.css">
+    <!-- <link rel="stylesheet" href="./css/slick.css"> -->
+   
 </head>
 <body>
     <div class="wrap-body">
@@ -20,7 +23,7 @@
                 <div class="header-outside row">
                     <div class="header-outside-logo col-xl-3">
                         <div class="header-outside-logo__image">
-                            <a href="">
+                            <a href="#">
                                 <img src="./images/logo/logo.png" alt="">
                             </a>
                         </div>
@@ -28,12 +31,12 @@
                     <div class="header-outside-nav col-xl-9">
                         <ul class="header-outside-nav__list">
                             <li class="header-outside-nav__list--item">
-                                <a href="" class="header-outside-nav__list--item-link">
+                                <a href="#" class="header-outside-nav__list--item-link">
                                     Trang Chủ
                                 </a>
                             </li>
                             <li class="header-outside-nav__list--item">
-                                <a href="" class="header-outside-nav__list--item-link">
+                                <a href="./about-us.html" class="header-outside-nav__list--item-link">
                                     Giới Thiệu
                                 </a>
                             </li>
@@ -58,7 +61,7 @@
                                 </a>
                             </li>
                             <li class="header-outside-nav__list--item">
-                                <a href="" class="header-outside-nav__list--item-link">
+                                <a href="./contact.html" class="header-outside-nav__list--item-link">
                                     Liên hệ
                                 </a>
                             </li>
@@ -70,7 +73,7 @@
 
         <div class="home-sidebar">
             <div class="home-sidebar-image">
-                <img src="./images/banner-05.png" alt="">
+                <img src="./images/banner-05.jpg" alt="">
             </div>
             <div class="home-sidebar-control">
                 <div class="home-sidebar-control__prev">
@@ -90,9 +93,9 @@
         <div class="content-home">
             <div class="home-service">
                 <div class="container">
-                    <div class="e180_26 home-service-outside">
-                        <h3 class="e4_35 home-service-outside__heading">DỊCH VỤ</h3>
-                        <p class="e4_36 home-service-outside__text">LeadSoft cung cấp các dịch vụ trọn gói dành cho website của bạn. Đảm bảo mang lại cho website của bạn
+                    <div class="home-service-outside">
+                        <h3 class="home-service-outside__heading">DỊCH VỤ</h3>
+                        <p class="home-service-outside__text">LeadSoft cung cấp các dịch vụ trọn gói dành cho website của bạn. Đảm bảo mang lại cho website của bạn
                         những giá trị tốt nhất, để nâng tầm sản phẩm của bạn cũng như thương hiệu của bạn lên 1 vị trí mới
                        </p>
                     </div>
@@ -111,7 +114,6 @@
                                 <img src="./images/headset.png" alt="">
                                 </div>
                             </div>
-
                             <div class="col-xl-4 home-service-list__item mb-64">
                                 <span class="home-service-list__item--number">02</span>
                                 <h5 class="home-service-list__item--heading">Phát triển ứng dụng chuyên ngành</h5>
@@ -122,7 +124,6 @@
                                 <img src="./images/ead-icon.png" alt="">
                                 </div>
                             </div>
-
                             <div class="col-xl-4 home-service-list__item mb-64">
                                 <span class="home-service-list__item--number">03</span>
                                 <h5 class="home-service-list__item--heading">Tùy biến hệ thống ERP</h5>
@@ -133,7 +134,6 @@
                                 <img src="./images/erp-02.png" alt="">
                                 </div>
                             </div>
-
                             <div class="col-xl-4 home-service-list__item">
                                 <span class="home-service-list__item--number">04</span>
                                 <h5 class="home-service-list__item--heading">Xây dựng trang Thương mại điện tử</h5>
@@ -144,7 +144,6 @@
                                 <img src="./images/cart.png" alt="">
                                 </div>
                             </div>
-
                             <div class="col-xl-4 home-service-list__item">
                                 <span class="home-service-list__item--number">05</span>
                                 <h5 class="home-service-list__item--heading">Thiết kế Website / Portal</h5>
@@ -155,7 +154,6 @@
                                 <img src="./images/http-web.png" alt="">
                                 </div>
                             </div>
-
                             <div class="col-xl-4 home-service-list__item">
                                 <span class="home-service-list__item--number">06</span>
                                 <h5 class="home-service-list__item--heading">Hợp tác đầu tư</h5>
@@ -170,159 +168,154 @@
                     </div>
                 </div>
             </div>
-            <div class="home-price">
+            <div class="price-list">
                 <div class="container"> 
-                    <div class="home-price-heading">BẢNG GIÁ TRỌN GÓI <span>- UY TÍN HÀNG ĐẦU</span></div>
-                    <p class="home-price-text">Công nghệ web hàng đầu – Tiết kiệm Chi Phí – Bàn giao web nhanh chóng</p>
-                    <div class="home-price-outside row">
+                    <div class="price-list-heading">BẢNG GIÁ TRỌN GÓI <span>- UY TÍN HÀNG ĐẦU</span></div>
+                    <p class="price-list-text">Công nghệ web hàng đầu – Tiết kiệm Chi Phí – Bàn giao web nhanh chóng</p>
+                    <div class="price-list-outside row">
                         <div class="col-xl-3">
-                            <div class="home-price-outside__inside">
-                                <div class="home-price-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
-                                <div class="home-price-outside__inside--type">
-                                    <span class="home-price-outside__inside--type-text">TRỌN GÓI</span>
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
                                 </div>
-                                <ul class="home-price-outside__inside--list">
-                                    <li class="home-price-outside__inside--list-item">
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
                                         1 Mẫu giao diện trong kho cơ bản
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hướng dẫn & tặng sách quản trị web
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hỗ trợ đổi sắc màu
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng hosting 1000mb băng thông Không Giới Hạn
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng domain .com trị giá 300k
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Bảo hành trọn đời
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
                                 </ul>
-                                <button class="e4_177 home-price-outside__inside--btn">Đăng ký</button>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
                             </div>
                         </div>
-
                         <div class="col-xl-3">
-                            <div class="home-price-outside__inside">
-                                <div class="home-price-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
-                                <div class="home-price-outside__inside--type home-background-seo">
-                                    <span class="home-price-outside__inside--type-text">TRỌN GÓI</span>
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
+                                <div class="price-list-outside__inside--type home-background-seo">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
                                 </div>
-                                <ul class="home-price-outside__inside--list">
-                                    <li class="home-price-outside__inside--list-item">
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
                                         1 Mẫu giao diện trong kho cơ bản
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hướng dẫn & tặng sách quản trị web
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hỗ trợ đổi sắc màu
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng hosting 1000mb băng thông Không Giới Hạn
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng domain .com trị giá 300k
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Bảo hành trọn đời
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
                                 </ul>
-                                <button class="e4_177 home-price-outside__inside--btn home-background-seo">Đăng ký</button>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-seo">Đăng ký</button>
                             </div>
                         </div>
-
                         <div class="col-xl-3">
-                            <div class="home-price-outside__inside">
-                                <div class="home-price-outside__inside--title home-color-support">
-                                    4.800.000 <br> <span>GÓI WEB HỖ TRỢ BÁN HÀNG</span>
-
-                                    <!-- <div class="home-price-advise__outside">
-                                        <span>Nên Dùng</span>
-                                    </div> -->
-                                      
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-support">
+                                    <div class="price-list-image">
+                                        <img src="./images/bgColor.png" alt="">
+                                    </div>
+                                    4.800.000 <br> <span>GÓI WEB HỖ TRỢ <br> BÁN HÀNG</span>
                                 </div>
-                                <div class="home-price-outside__inside--type home-background-support">
-                                    <span class="home-price-outside__inside--type-text">TRỌN GÓI</span>
+                                <div class="price-list-outside__inside--type home-background-support">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
                                 </div>
-                                <ul class="home-price-outside__inside--list">
-                                    <li class="home-price-outside__inside--list-item">
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
                                         1 Mẫu giao diện trong kho cơ bản
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hướng dẫn & tặng sách quản trị web
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hỗ trợ đổi sắc màu
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng hosting 1000mb băng thông Không Giới Hạn
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng domain .com trị giá 300k
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Bảo hành trọn đời
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
                                 </ul>
-                                <button class="e4_177 home-price-outside__inside--btn home-background-support">Đăng ký</button>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-support">Đăng ký</button>
                             </div>
                         </div>
-
                         <div class="col-xl-3">
-                            <div class="home-price-outside__inside">
-                                <div class="home-price-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
-                                <div class="home-price-outside__inside--type">
-                                    <span class="home-price-outside__inside--type-text">TRỌN GÓI</span>
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
                                 </div>
-                                <ul class="home-price-outside__inside--list">
-                                    <li class="home-price-outside__inside--list-item">
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
                                         1 Mẫu giao diện trong kho cơ bản
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hướng dẫn & tặng sách quản trị web
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Hỗ trợ đổi sắc màu
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng hosting 1000mb băng thông Không Giới Hạn
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Tặng domain .com trị giá 300k
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Bảo hành trọn đời
                                     </li>
-                                    <li class="home-price-outside__inside--list-item">
+                                    <li class="price-list-outside__inside--list-item">
                                         Thời gian hoàn thiện 1 ngày
                                     </li>
                                 </ul>
-                                <button class="e4_177 home-price-outside__inside--btn">Đăng ký</button>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
                             </div>
                         </div>
                     </div>
@@ -333,123 +326,771 @@
                     <div class="home-store-heading">KHO GIAO DIỆN MẪU</div>
                     <p class="home-store-text">Đa dạng, phù hợp với mọi đối tượng từ cá nhân đến doanh nghiệp</p>
                     <ul class="home-store-list">
-                        <li class="home-store-list__item">
-                            <a class="home-store-list__item--link active" href="">XU HƯỚNG WEB 2022</a>
+                        <li class="home-store-list__item active">
+                            <a href="#tab1" class="home-store-list__item--link">XU HƯỚNG WEB 2022</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB MẪU NỘI DUNG</a>
+                            <a href="#tab2" class="home-store-list__item--link">WEB MẪU NỘI DUNG</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB BÁN HÀNG</a>
+                            <a href="#tab3" class="home-store-list__item--link">WEB BÁN HÀNG</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB BẤT ĐỘNG SẢN</a>
+                            <a href="#tab4" class="home-store-list__item--link">WEB BẤT ĐỘNG SẢN</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB Ô TÔ</a>
+                            <a href="#tab5" class="home-store-list__item--link">WEB Ô TÔ</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB MỸ PHẨM</a>
+                            <a href="#tab6" class="home-store-list__item--link">WEB MỸ PHẨM</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB GIÁO DỤC</a>
+                            <a href="#tab7" class="home-store-list__item--link">WEB GIÁO DỤC</a>
                         </li>
                         <li class="home-store-list__item">
-                            <a class="home-store-list__item--link" href="">WEB LANDING PAGE</a>
+                            <a href="#tab8" class="home-store-list__item--link">WEB LANDING PAGE</a>
                         </li>
                     </ul>
-                    <div class="home-store-images">
-                        <ul class="home-store-images__list row">
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image1.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                    
+                    <section class="tabs-content">
+                        <div class="home-store-images active" id="tab1">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image2.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image1.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image2.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image1.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image2.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image1.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="home-store-images__list--item col-xl-3">
-                                <img src="./images/image2.png" alt="">
-                                <div class="over-show">
-                                    <h5 class="over-show-title">WEB MẦM NON RT1</h5>
-                                    <p class="over-show-text">Web mới cập nhật</p>
-                                    <div class="over-show-btn">
-                                        <button class="over-show-btn__demo">XEM DEMO</button>
-                                        <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab2">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab3">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab4">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab5">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab6">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab7">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-store-images" id="tab8">
+                            <ul class="home-store-images__list row">
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image1.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="home-store-images__list--item col-xl-3">
+                                    <img src="./images/image2.png" alt="">
+                                    <div class="over-show">
+                                        <h5 class="over-show-title">WEB MẦM NON RT1</h5>
+                                        <p class="over-show-text">Web mới cập nhật</p>
+                                        <div class="over-show-btn">
+                                            <button class="over-show-btn__demo">XEM DEMO</button>
+                                            <button class="over-show-btn__detail">XEM CHI TIẾT</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
                     <button class="home-store-btn">Xem thêm</button>
                 </div>
             </div>
@@ -460,70 +1101,82 @@
                     <div class="home-reason-outside">
                         <ul class="home-reason-outside__list row">
                             <li class="home-reason-outside__list--item col-xl-4">
-                                <div class="home-reason-outside__list--item-image">
-                                    <img src="./images/check-02.png" alt="">
+                                <div class="home-reason-outside__list--item-inside">
+                                    <div class="home-reason-outside__list--item-inside--image">
+                                        <img src="./images/check-02.png" alt="">
+                                    </div>
+                                    <h4 class="home-reason-outside__list--item-inside--heading">
+                                        CHẤT LƯỢNG
+                                    </h4>
+                                    <p class="home-reason-outside__list--item-inside--text">
+                                        Đội ngũ chuyên gia lĩnh vực giàu kinh nghiệm, quy trình quản lý tinh gọn, kinh nghiệm triển khai lâu năm.
+                                    </p>
                                 </div>
-                                <h4 class="home-reason-outside__list--item-heading">
-                                    CHẤT LƯỢNG
-                                </h4>
-                                <p class="home-reason-outside__list--item-text">
-                                    Đội ngũ chuyên gia lĩnh vực giàu kinh nghiệm, quy trình quản lý tinh gọn, kinh nghiệm triển khai lâu năm.
-                                </p>
                             </li>
                             <li class="home-reason-outside__list--item col-xl-4">
-                                <div class="home-reason-outside__list--item-image">
-                                    <img src="./images/result.png" alt="">
+                                <div class="home-reason-outside__list--item-inside">
+                                    <div class="home-reason-outside__list--item-inside--image">
+                                        <img src="./images/result.png" alt="">
+                                    </div>
+                                    <h4 class="home-reason-outside__list--item-inside--heading">
+                                        HIỆU QUẢ
+                                    </h4>
+                                    <p class="home-reason-outside__list--item-inside--text">
+                                        Cung cấp giải pháp trọn gói, lộ trình triển khai linh hoạt, mục tiêu cao nhất là bảo toàn đầu tư cho khách hàng và đối tác.
+                                    </p>
                                 </div>
-                                <h4 class="home-reason-outside__list--item-heading">
-                                    HIỆU QUẢ
-                                </h4>
-                                <p class="home-reason-outside__list--item-text">
-                                    Cung cấp giải pháp trọn gói, lộ trình triển khai linh hoạt, mục tiêu cao nhất là bảo toàn đầu tư cho khách hàng và đối tác.
-                                </p>
                             </li>
                             <li class="home-reason-outside__list--item col-xl-4">
-                                <div class="home-reason-outside__list--item-image">
-                                    <img src="./images/quality.png" alt="">
+                                <div class="home-reason-outside__list--item-inside">
+                                    <div class="home-reason-outside__list--item-inside--image">
+                                        <img src="./images/quality.png" alt="">
+                                    </div>
+                                    <h4 class="home-reason-outside__list--item-inside--heading">
+                                        TIN CẬY
+                                    </h4>
+                                    <p class="home-reason-outside__list--item-inside--text">
+                                        Đối tác chiến lược là các tập đoàn và tổng công ty lớn, đảm bảo năng lực trong các lĩnh vực kinh doanh mà công ty tham gia.
+                                    </p>
                                 </div>
-                                <h4 class="home-reason-outside__list--item-heading">
-                                    TIN CẬY
-                                </h4>
-                                <p class="home-reason-outside__list--item-text">
-                                    Đối tác chiến lược là các tập đoàn và tổng công ty lớn, đảm bảo năng lực trong các lĩnh vực kinh doanh mà công ty tham gia.
-                                </p>
                             </li>
                             <li class="home-reason-outside__list--item col-xl-4">
-                                <div class="home-reason-outside__list--item-image">
-                                    <img src="./images/system.png" alt="">
+                                <div class="home-reason-outside__list--item-inside">
+                                    <div class="home-reason-outside__list--item-inside--image">
+                                        <img src="./images/system.png" alt="">
+                                    </div>
+                                    <h4 class="home-reason-outside__list--item-inside--heading">
+                                        HỆ THỐNG
+                                    </h4>
+                                    <p class="home-reason-outside__list--item-inside--text">
+                                        Chúng tôi luôn hướng tới cung cấp các giải pháp tổng thể, đem lại hiệu quả đầu tư cao nhất theo lộ trình cụ thể.
+                                    </p>
                                 </div>
-                                <h4 class="home-reason-outside__list--item-heading">
-                                    HỆ THỐNG
-                                </h4>
-                                <p class="home-reason-outside__list--item-text">
-                                    Chúng tôi luôn hướng tới cung cấp các giải pháp tổng thể, đem lại hiệu quả đầu tư cao nhất theo lộ trình cụ thể.
-                                </p>
                             </li>
                             <li class="home-reason-outside__list--item col-xl-4">
-                                <div class="home-reason-outside__list--item-image">
-                                    <img src="./images/global-01.png" alt="">
+                                <div class="home-reason-outside__list--item-inside">
+                                    <div class="home-reason-outside__list--item-inside--image">
+                                        <img src="./images/global-01.png" alt="">
+                                    </div>
+                                    <h4 class="home-reason-outside__list--item-inside--heading">
+                                        TỔNG THỂ
+                                    </h4>
+                                    <p class="home-reason-outside__list--item-inside--text">
+                                        Mạng lưới kinh doanh trải khắp các vùng miền, đảm bảo phối hợp và hỗ trợ kịp thời khách hàng và đối tác.
+                                    </p>
                                 </div>
-                                <h4 class="home-reason-outside__list--item-heading">
-                                    TỔNG THỂ
-                                </h4>
-                                <p class="home-reason-outside__list--item-text">
-                                    Mạng lưới kinh doanh trải khắp các vùng miền, đảm bảo phối hợp và hỗ trợ kịp thời khách hàng và đối tác.
-                                </p>
                             </li>
                             <li class="home-reason-outside__list--item col-xl-4">
-                                <div class="home-reason-outside__list--item-image">
-                                    <img src="./images/partner-02.png" alt="">
+                                <div class="home-reason-outside__list--item-inside">
+                                    <div class="home-reason-outside__list--item-inside--image">
+                                        <img src="./images/partner-02.png" alt="">
+                                    </div>
+                                    <h4 class="home-reason-outside__list--item-inside--heading">
+                                        HỢP TÁC
+                                    </h4>
+                                    <p class="home-reason-outside__list--item-inside--text">
+                                        Luôn sẵn sàng hợp tác kinh doanh, đầu tư và phát triển các dự án tiềm năng với mọi đối tác.
+                                    </p>
                                 </div>
-                                <h4 class="home-reason-outside__list--item-heading">
-                                    HỢP TÁC
-                                </h4>
-                                <p class="home-reason-outside__list--item-text">
-                                    Luôn sẵn sàng hợp tác kinh doanh, đầu tư và phát triển các dự án tiềm năng với mọi đối tác.
-                                </p>
                             </li>
                         </ul>
                     </div>
@@ -531,94 +1184,287 @@
             </div>
             <div class="home-projects">
                 <h3 class="home-projects-heading">Các dự án tiêu biểu</h3>
-                <ul class="home-projects-outside">
-                    <div class="home-projects-outside__top">
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image3.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image4.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image5.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image6.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image7.png" alt="">
-                        </li>
-                    </div>
-                    <!-- <div class="home-projects-outside__between">
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image3.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image4.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image5.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image6.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image7.png" alt="">
-                        </li>
-                    </div>
-                    <div class="home-projects-outside__bottom">
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image3.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image4.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image5.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image6.png" alt="">
-                        </li>
-                        <li class="home-projects-outside__top--item">
-                            <img src="./images/image7.png" alt="">
-                        </li>
-                    </div> -->
+                <ul class="home-projects-top">
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-01.png" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                </ul>
+                <ul class="home-projects-between">
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-01.png" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                </ul>
+                <ul class="home-projects-bottom">
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-01.png" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/app-development-02.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
+                    <li class="home-projects-top__inside">
+                        <div class="home-projects-top__inside--image">
+                            <img src="./images/aquarius.jpg" alt="">
+                        </div>
+                        <h4 class="home-projects-top__inside--heading">VEO - Du lịch tỉnh</h4>
+                        <p class="home-projects-top__inside--text">Câu chuyện về Web bắt nguồn từ mong muốn mang đến cuộc sống ổn định hơn cho cộng đồng vung cao. VEO tập trung vào việc cung</p>
+                        <button class="home-projects-top__inside--btn">Tìm hiểu thêm</button>
+                    </li>
                 </ul>
             </div>
-            <div class="home-consultants">
+            <div class="consulting-team">
                 <div class="container">
-                    <div class="home-consultants-heading">CHUYÊN VIÊN TƯ VẤN</div>
-                    <p class="home-consultants-text">Kinh nghiệm, năng lực và thương hiệu của chúng tôi đã được khẳng định trên thị trường</p>
-                    <div class="home-consultants-outside">
-                        <ul class="home-consultants-outside__list">
-                            <li class="home-consultants-outside__list--item col-xl-2">
+                    <div class="consulting-team-heading">CHUYÊN VIÊN TƯ VẤN</div>
+                    <p class="consulting-team-text">Kinh nghiệm, năng lực và thương hiệu của chúng tôi đã được khẳng định trên thị trường</p>
+                    <div class="consulting-team-outside">
+                        <ul class="consulting-team-outside__list">
+                            <li class="consulting-team-outside__list--item col-xl-2">
                                 <img src="./images/imagePeople1.png" alt="">
-                                <div class="home-consultants-border"></div>
-                                <h5 class="home-consultants-outside__list--item-heading">Hoàng Hiền</h5>
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="home-consultants-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2">
                                 <img src="./images/imagePeople1.png" alt="">
-                                <div class="home-consultants-border"></div>
-                                <h5 class="home-consultants-outside__list--item-heading">Hoàng Hiền</h5>
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="home-consultants-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2">
                                 <img src="./images/imagePeople1.png" alt="">
-                                <div class="home-consultants-border"></div>
-                                <h5 class="home-consultants-outside__list--item-heading">Hoàng Hiền</h5>
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="home-consultants-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2">
                                 <img src="./images/imagePeople1.png" alt="">
-                                <div class="home-consultants-border"></div>
-                                <h5 class="home-consultants-outside__list--item-heading">Hoàng Hiền</h5>
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="home-consultants-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2">
                                 <img src="./images/imagePeople1.png" alt="">
-                                <div class="home-consultants-border"></div>
-                                <h5 class="home-consultants-outside__list--item-heading">Hoàng Hiền</h5>
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
                         </ul>
@@ -626,6 +1472,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Footer -->
         <footer class="footer">
             <div class="footer-outside">
@@ -673,7 +1520,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="footer-outside-bottom">
                     <div class="container">
                         <div class="row">
@@ -743,11 +1589,9 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="footer-outside-bottom__image">
                         <img src="./images/image 29.png" alt="">
                     </div>
-
                     <div class="footer-outside-bottom__outside container">
                         <div class="footer-outside-bottom__outside--left">
                             ©2022 Bản quyền thuộc về Leadsoft
@@ -760,10 +1604,14 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="./js/main.js"></script>
+    
 </body>
 </html>
