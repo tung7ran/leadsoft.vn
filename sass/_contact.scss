@@ -1,0 +1,90 @@
+@import 'variables';
+
+.contact-slider {
+    margin-top: 6.4rem;
+    margin-bottom: 10.4rem;
+    position: relative;
+    &-image {
+        width: 100%;
+    }
+    &-heading {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $white;
+        font-size: 4.8rem;
+        font-weight: bold;
+    }
+}
+.content-contact{
+    &-left {
+        &__title{
+            width:139px;
+            height:67px;
+            position: relative;
+            &--line{
+                background-color:#ec2028;
+                width:88px;
+                height:3px;
+                position:absolute;
+                left:10px;
+                top:50px;
+            }
+            &--heading{
+                left:0px;
+                top:0px;
+                font-size:38px;
+                font-weight: 700;
+            }
+        }
+    }
+    .contact-form{
+        margin-top: 50px;
+        height: 46rem;
+        position: relative;
+        span{
+            font-size: 18px;
+            line-height: 25px;
+            color: #000000;
+            width: 200px;
+            float: left;
+            margin-bottom: 32px;
+        }
+        input{
+            height: 34px;
+            width: 318px;
+            border-radius: 10px;
+            margin-bottom: 24px;
+            float: right;
+            border: 1px solid #9F9F9F;
+            margin-right: 60px;
+        }
+        &-content{
+            input{
+                height: 131px;
+            }
+        }
+        &-btn {
+            width: 13.1rem;
+            height: 4.6rem;
+            background: #08659E;
+            color: $white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 1rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
+
+    &-right{
+        iframe{
+            width: 55.5rem;
+            height: 41.7rem;
+        }
+    }
+}

@@ -1,6 +1,321 @@
-@import 'base';
 @import 'mixin';
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'base';
 @import 'home';
+@import 'about-us';
+@import 'contact';
+@import 'service';
+@import 'recruitment';
+
+
+.price-list {
+    height: 80.6rem;
+    &-heading {
+        position: relative;
+        font-size: 3.8rem;
+        font-weight: bold;
+        color: #0FD186;
+        text-align: center;
+        margin-top: 14.5rem;
+        span {
+            color: $color-main;
+        }
+    }
+    &-heading::after {
+        content: "";
+        position: absolute;
+        top: 4.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16.8rem;
+        height: 0.3rem;
+        background-color: #EC2028;
+    }
+    &-text {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 4.6rem;
+    }
+    &-outside {
+        &__inside { 
+            width: 30.6rem;
+            height: 59.3rem;
+            box-shadow:0px 4px 12px #00000040;
+            background-color: $white;
+            left:0px;
+            top:0px;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            margin-top: 9rem;
+            transition: transform linear 0.1s;
+            
+            &--title { 
+                text-align:center;
+                letter-spacing:0;
+                color: $color-orange;
+                font-size: 3.8rem;
+                font-weight: bold;
+                padding-top: 4rem;
+                padding-bottom: 1rem;
+                position: relative;
+                span {
+                    font-size: 1.6rem;
+                }
+                .price-list-advise__outside {
+                    background-color: #F0A21A;
+                    width: 6.1rem;
+                    height: 6.4rem;
+                    position: relative;
+                    top: -9rem;
+                    span { 
+                        transform: rotate(-46.323315221355664deg);
+                        color: $white;
+                        width:29px;
+                        height:30px;
+                        position:absolute;
+                        left: 0.5rem;
+                        top: 0;
+                        text-align:left;
+                        font-size: 1.1rem;
+                    }
+                    
+                }
+            }
+            .home-color-seo {
+                color: #25B37C;
+            }
+            .home-background-seo {
+                background-color: #25B37C;
+            }
+            .home-color-support {
+                background-color: #D74848;
+                color: $white;
+                z-index: 0;
+                padding-bottom: 2.3rem;
+                padding-top: 0;
+                span {
+                    line-height: 1.4em;
+                    display: block;
+                    margin-top: 1.2rem;
+                }
+                .price-list-image {
+                    position: absolute;
+                    left: -0.1rem;
+                    bottom: -0.1rem;
+                    width: 30.7rem;
+                    height: 15rem;
+                    z-index: -1;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+            .home-background-support {
+                background-color: #C02C2C;
+            }
+            &--type { 
+                height: 4.8rem;
+                line-height: 4.8rem;
+                text-align: center;
+                background-color: $color-orange;
+
+                &-text { 
+                    color: $white;
+                    font-family: Inter;
+                    font-size: 1.5rem;
+                }
+            }
+            &--list {
+                &-item {
+                    color: $light-black;
+                    font-family:Inter;
+                    font-size: 1.5rem;
+                    position: relative;
+                    margin-left: 2rem;
+                    margin-bottom: 1rem;
+                    padding-bottom: 0.8rem;
+                    border: 1px solid #fff;
+                    background-image: linear-gradient(#d9d9d9, #d9d9d9), linear-gradient(#d9d9d9, #d9d9d9);
+                    background-repeat: no-repeat;
+                    background-size: 0 0, 91% 1px, 0 0, 0 0, calc(100% - 8px) calc(100% - 8px);
+                    background-position: left bottom, left bottom,1px 1px;
+                }
+                &-item::before {
+                    content: "";
+                    position:absolute;
+                    left: -1.2rem;
+                    top: 0.5rem;
+                    width: 0.69rem;
+                    height: 0.7rem;
+                    border-radius:50%;
+                    background-color:$light-white;
+                }
+                &-item:first-child {
+                    margin-top: 2.8rem;
+                }
+                &-item:last-child{
+                    margin-bottom: 1.8rem;
+                    background: transparent;
+                }
+            }
+            &--btn { 
+                color: $white;
+                width: 7.5rem;
+                height: 3.7rem;
+                font-size: 1.5rem;
+                box-shadow: 0 0.4rem 0.4rem #00000040;
+                background-color: $color-orange;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                border: none;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                padding-bottom: 0.4rem;
+            }
+        }
+        &__inside:hover {
+            transform: translateY(-4px);
+            box-shadow:0px 4px 12px #00000040;
+        }
+    }
+}
+.home-projects {
+    height: 136.4rem;
+    &-heading {
+        position: relative;
+        font-size: 3.8rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 9.3rem;
+    }
+    &-heading::after {
+        content: "";
+        position: absolute;
+        top: 14rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16.8rem;
+        height: 0.3rem;
+        background-color: #EC2028;
+    }
+    &-top,
+    &-between,
+    &-bottom {
+        &__inside {
+            height: 37rem;
+            color: $white;
+            position: relative;
+            left: 1rem;
+            &--image {
+                position: absolute;
+                width: 58rem;
+                height: 100%;
+                img {
+                    height: 100%;
+                }
+            }
+            &--heading {
+                font-size: 1.8rem;
+                position: relative;
+                margin-top: 4rem;
+                margin-left: 4rem;
+            }
+            &--text {
+                font-size: 1.6rem;
+                position: relative;
+                margin: 1.5rem 39% 2rem 4rem;
+                height: 8rem;
+            }
+            &--btn {
+                position: relative;
+                font-size: 1.6rem;
+                color: $white;
+                background-color: #F0A21A;
+                padding: 0.8rem 3rem;
+                border-radius: 0.5rem;
+                margin-left: 4rem;
+                border: none;
+            }
+        }
+    }
+    &-top {
+        top: 7rem;
+    }
+    &-between {
+        top: 9rem;
+    }
+    &-bottom {
+        top: 11rem;
+    }
+}
+.consulting-team {
+    &-heading {
+        position: relative;
+        font-size: 3.8rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 9.3rem;
+        color: $color-main;
+    }
+    &-heading::after {
+        content: "";
+        position: absolute;
+        top: 14rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16.8rem;
+        height: 0.3rem;
+        background-color: $Bgcolor-after;
+    }
+    &-text {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 4.6rem;
+        margin-bottom: 6.2rem;
+        color: $color-text;
+    }
+
+    &-outside {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8rem;
+            &--item {
+                background: $white;
+                box-shadow: 0px 4px 4px $color-boxshadow;
+                border-radius: 10px;
+                > img {
+                    border-radius: 1rem;
+                }
+                .consulting-team-border {
+                    border-top: 3px solid $Bgcolor-after;
+                }
+                &-heading {
+                    font-size: 1.8rem;
+                    font-family: Inter;
+                    font-weight: 600;
+                    color: $black;
+                    text-align: center;
+                    margin-top: 2.3rem;
+                    margin-bottom: 1rem;
+                }
+                span {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    font-family: Inter;
+                    color: $Bgcolor-after;
+                    text-align: center;
+                    display: block;
+                    padding-bottom: 2.1rem;
+                }
+            }
+        }
+    }
+}

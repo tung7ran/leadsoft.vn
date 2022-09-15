@@ -147,3 +147,11 @@ img {
   width: 100%;
   height: auto;
 }
+.slick-next,
+.slick-prev{
+  display: none;
+}
+.header-active {
+  color: #0FD186;
+  font-weight: bold;
+}
