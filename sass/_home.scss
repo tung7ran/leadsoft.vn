@@ -75,7 +75,6 @@
                     left: 11.8rem;
                     top:0px;
                 }
-                
             }
         }
     }
@@ -127,12 +126,12 @@
                 }
             }
             &__item.active {
-                    background-color: #0FD186;
-                    font-weight: bold;
-                    border: 1px solid #0C945F;
-                    a {
-                        color: $white;
-                    }
+                background-color: #0FD186;
+                font-weight: bold;
+                border: 1px solid #0C945F;
+                a {
+                    color: $white;
+                }
             }
         }
         &-images {
@@ -295,11 +294,6 @@
                         }  
                     }
                 }
-                // &--item::after {
-                //     content: "";
-                //     position:  absolute;
-                //     border-radius: 1rem;
-                // }
                 &--item:hover:before {
                     content: "";
                     position:  absolute;
@@ -317,11 +311,9 @@
                 }
                 @keyframes animate {
                     0% {
-                    //   opacity:1;
                       transform: rotate(0deg);
                     }
                     100% {
-                    //   opacity: 0;
                       transform: rotate(360deg);
                     }
                 }
