@@ -320,3 +320,21 @@
         }
     }
 }
+.general-slider {
+    margin-top: 6.4rem;
+    margin-bottom: 10.4rem;
+    position: relative;
+    &-image {
+        width: 100%;
+    }
+    &-heading {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $white;
+        font-size: 4.8rem;
+        font-weight: bold;
+        text-align:center;
+    }
+}
