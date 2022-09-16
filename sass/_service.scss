@@ -1,0 +1,45 @@
+.service-heading {
+    line-height: 1.4em;
+    top: 26% !important;
+}
+.content-service{
+    width: 1200px;
+    margin: 0 auto;
+
+    .container{
+        margin-bottom: 90px;
+    }
+    h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #3579A5;
+    }
+    h4,p{
+        font-size: 17px;
+        line-height: 23px;
+        color: #000000;
+    }
+    ul
+    li{
+        font-size: 17px;
+        line-height: 23px;
+        color: #F26C2F;
+    }
+
+    .advice-button{       
+        background: #43BAFF;
+        border-radius: 10px;
+        width: 189px;
+        height: 32px;
+        
+        .action-button{
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            display: block;
+            text-align: center;
+        }
+    }
+} 

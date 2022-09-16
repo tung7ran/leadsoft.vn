@@ -1,0 +1,130 @@
+@import 'variables';
+
+.banner{
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: 50% 50%;
+        object-position: 50% 50%;
+        position: absolute;
+        z-index: -3;
+        top: 0;
+        left: 0;
+    }
+}
+
+.content-about{
+    .mt-9 {
+        margin-top: 9rem;
+    }
+    .pd-0 {
+        padding-top: 0;
+    }
+    &-title{
+        height: 6.7rem;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 9rem;
+        margin-bottom: 9rem;
+        &__line{
+            background-color: $Bgcolor-after;
+            width: 16.8rem;
+            height: 0.3rem;
+            position:absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 5rem;
+        }
+        &__heading{
+            color:#000000;
+            left:0px;
+            top:0px;
+            font-size: 3.8rem;
+            font-weight: 700;
+        }
+        &__text{
+            margin-top: 5.5rem;
+            display: block; 
+            font-style: italic;
+            color: $Bgcolor-after;
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.7rem;
+        }
+    }
+    &-left{
+        &__info{
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: $black;
+        }
+    }
+    &-right{
+        padding-top: 12rem;
+        &__outside{
+        width: 39.5rem;
+        height: 9rem;
+        margin: 0 0 8rem 12rem;
+        &--image {
+            width: 9.8rem;
+            height: 9rem;
+            float: left;
+        }
+        &--text{
+            float: left;
+            margin: 1.5rem 0 0 3rem;
+            &-number{
+                color: $color-main;
+                font-size: 2.4rem;
+                padding-bottom: 1rem;
+            }
+            span{
+                font-size: 2.4rem;
+                color: $black;
+            }
+        }
+        }
+    }
+    &-outside{
+        width: 94.6rem;
+        height: 71.5rem;
+        margin: 7rem auto 0;
+        &-title{
+            margin-bottom: 4rem;
+            position: relative;
+            &__line{
+                background-color: $Bgcolor-after;
+                width: 15.8rem;
+                height: 0.3rem;
+                position:absolute;
+                left: 51.5%;
+                transform: translateX(-50%);
+                top: 5rem;
+            }
+            &__heading{
+                color: $black;
+                left:0px;
+                top:0px;
+                font-size: 3.8rem;
+                font-weight: 700;
+                padding-left: 2.8rem;
+                text-align: center;
+            }
+        }
+        &__info{
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: $black;
+        }
+    }
+}

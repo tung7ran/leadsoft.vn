@@ -1,0 +1,100 @@
+@import 'variables';
+
+.header {
+    border-bottom: 0.3rem solid #43baff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	background-color: $white;
+    &-outside {
+        background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0);
+        height:7.7rem;
+        align-items: center;
+        &-logo {
+            &__image {
+                width:210px;
+                height:26.367px;
+                float: right;
+                margin-right: 1.2rem;
+            }
+        }
+        &-nav {
+            &__list {
+                display: flex;
+				justify-content: center;
+                &--item {
+                    margin-right: 2.6rem;
+                    &-link {
+                        font-size: 1.8rem;
+                        color:  $black;
+                        letter-spacing: 0;
+                        height: 2.5rem;
+                        min-width: 6.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.home-sidebar {
+	position: relative;
+	background-color:#1f1f1f;
+	margin-top: 7.8rem;
+	&-image {
+		height: 75.5rem;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+		}
+
+	}
+	&-control {
+		position: absolute;
+		inset: 0;
+		&__prev {
+			width:4.5rem;
+			height:4.5rem;
+			position:absolute;
+			left:7.1rem;
+			top:40rem;
+			background-color:#424242b5;
+			border-radius: 50%;
+			cursor: pointer;
+			&--image {
+				width: 1.4rem;
+				height: 2.4rem;
+				margin: 0 auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -1.2rem;
+				border: none;
+				background: transparent;
+				
+			}
+		}
+		&__next { 
+			width:4.5rem;
+			height:4.5rem;
+			position:absolute;
+			right: 7rem;
+			top:40rem;
+			background-color:#424242b5;
+			border-radius: 50%;
+			cursor: pointer;
+			&--image {
+				width: 1.4rem;
+				height: 2.4rem;
+				margin: 0 auto;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				right: -1.5rem;
+				border: none;
+				background: transparent;
+			}
+		}
+	}
+}
