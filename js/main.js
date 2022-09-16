@@ -13,6 +13,19 @@ $(document).ready(function(){
       return false;
     });
 
+    $('.content-webstore-list a').click(function() {
+
+      $('.content-webstore-list .content-webstore-list__item ').removeClass('active');
+      $(this).parent().addClass('active');
+  
+      // Display active tab
+      let currentTab = $(this).attr('href');
+      $('.tabs-content div').hide();
+      $(currentTab).show();
+  
+      return false;
+    });
+
     $('.home-projects-top').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
