@@ -33,7 +33,6 @@
             margin-top: 2rem;
             border-radius: 2.5rem;
             border: 1px solid #9F9F9F;
-
             &--link {
                 display: block;
                 padding: 0 1.5rem;
@@ -47,11 +46,11 @@
             }
         }
         &__item.active {
-                background-color: #3882B1;
-                font-weight: bold;
-                a {
-                    color: $white;
-                }
+            background-color: #3882B1;
+            font-weight: bold;
+            a {
+                color: $white;
+            }
         }
     }
     &-outside {
