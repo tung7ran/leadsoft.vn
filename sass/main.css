@@ -79,7 +79,8 @@
   overflow: hidden;
 }
 .home-sidebar-image img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home-sidebar-control {
   position: absolute;
@@ -379,8 +380,6 @@ video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -442,10 +441,6 @@ img {
 .header-active {
   color: #0FD186;
   font-weight: bold;
-}
-
-.wrap-body {
-  position: relative;
 }
 
 .content-home .mb-64 {
@@ -598,7 +593,8 @@ img {
   left: 0.7rem;
   right: 0.9rem;
   background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #3C576F 100%);
-  animation: show 0.8s linear;
+  -webkit-animation: show 0.8s linear;
+          animation: show 0.8s linear;
 }
 .content-home .home-store-images__list .over-show-title {
   font-size: 1.8rem;
@@ -644,6 +640,14 @@ img {
 .content-home .home-store-images__list--item:hover .over-show {
   display: block;
   cursor: pointer;
+}
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes show {
   from {
@@ -746,11 +750,20 @@ img {
   width: 30%;
   height: 240%;
   background: linear-gradient(#00ccff, #d400d4);
-  animation: animate 4s linear infinite;
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
 }
 .content-home .home-reason-outside__list--item:hover {
   box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 15px 15px 38px 0 rgba(0, 0, 0, 0.2);
+}
+@-webkit-keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes animate {
   0% {
@@ -761,124 +774,6 @@ img {
   }
 }
 
-.call-btn {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  bottom: 0px;
-  background: #fff;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 0;
-  width: 110px;
-  height: 110px;
-  z-index: 1000;
-}
-
-.call-btn .tada {
-  background: #0FD186;
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -20px;
-  margin-left: -20px;
-  animation-name: tada;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.call-btn .tada a:before {
-  font-family: FontAwesome;
-  content: "\f095";
-  font-size: 25px;
-  text-decoration: none;
-  color: #fff;
-  margin-left: 10px;
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
-}
-
-@keyframes tada {
-  from {
-    transform: rotate(-20deg);
-  }
-  to {
-    transform: rotate(20deg);
-  }
-}
-.call-btn .pulse {
-  width: 60px;
-  height: 60px;
-  background: #0FD186;
-  border-radius: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -30px;
-  margin-left: -30px;
-  animation-name: pulse;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes pulse {
-  from {
-    width: 55px;
-    height: 55px;
-    margin-top: -27.5px;
-    margin-left: -27.5px;
-  }
-  to {
-    width: 60px;
-    height: 60px;
-    margin-top: -30px;
-    margin-left: -30px;
-  }
-}
-.call-btn .zoomIn {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #0FD186;
-  border-radius: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -40px;
-  margin-left: -40px;
-  animation-name: zoomIn;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
-}
-
-@keyframes zoomIn {
-  from {
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    margin-left: -20px;
-  }
-  to {
-    width: 80px;
-    height: 80px;
-    margin-top: -40px;
-    margin-left: -40px;
-  }
-}
-@media screen and (max-width: 549px) {
-  .call-btn {
-    width: 80px;
-    height: 80px;
-  }
-}
 .banner {
   width: 100%;
   height: 50rem;
@@ -1122,15 +1017,13 @@ img {
 }
 
 .header .banner {
+  position: relative;
   width: 100%;
-  height: 500px;
+  height: 50rem;
   overflow: hidden;
   margin: auto;
-  position: relative;
 }
 .header .banner img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 50% 50%;
@@ -1141,73 +1034,71 @@ img {
   left: 0;
 }
 
-.content-recruitment {
-  width: 1200px;
-  margin: 0 auto;
-}
-.content-recruitment .content-recruitment-title {
-  font-size: 24px;
-  line-height: 35px;
-  font-weight: 700;
-  margin-top: 92px;
+.content-recruit-title {
   display: block;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  margin-top: 9.2rem;
+  margin-left: 8.4rem;
+  margin-bottom: 7.3rem;
 }
-.content-recruitment .content-recruit {
-  width: 1140px;
-  height: 550px;
-  border: 1px solid #4d4d4d;
-  border-radius: 20px;
-  margin-top: 73px;
-  padding: 40px 70px;
+.content-recruit-outside {
   position: relative;
+  width: 114rem;
+  height: 55rem;
+  border: 1px solid #4d4d4d;
+  border-radius: 2rem;
+  padding: 4rem 7rem;
+  margin: 0 auto 3rem;
 }
-.content-recruitment .content-recruit .alert {
-  padding: 0 0 21px 0;
+.content-recruit-outside__top {
+  padding: 0 0 2.1rem 0;
   border-bottom: 1px solid #818181;
   position: relative;
 }
-.content-recruitment .content-recruit .alert h3 {
+.content-recruit-outside__top--heading {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
 }
-.content-recruitment .content-recruit .alert span {
+.content-recruit-outside__top span {
   color: #4D4D4D;
-  font-size: 16px;
-  line-height: 22px;
-  margin-top: 22px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-top: 2.2rem;
   display: block;
   width: 70%;
 }
-.content-recruitment .content-recruit .alert span img {
-  width: 15px;
-  height: 20px;
+.content-recruit-outside__top span img {
+  width: 1.5rem;
+  height: 2rem;
   float: left;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
-.content-recruitment .content-recruit .alert button {
+.content-recruit-outside__top--btn {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
   border: none;
-  margin-left: 66px;
+  margin-left: 6.6rem;
   color: #43BAFF;
   background: #ffffff;
   position: absolute;
   right: 20rem;
-  bottom: 20px;
+  bottom: 2rem;
 }
-.content-recruitment .content-recruit .recruit-alert-content {
+.content-recruit-outside__info {
   width: 740px;
   margin-top: 25px;
 }
-.content-recruitment .content-recruit .recruit-alert-content span {
+.content-recruit-outside__info span {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #4D4D4D;
 }
-.content-recruitment .content-recruit .recruit-alert-content ul li {
+.content-recruit-outside__info--list-item {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1215,23 +1106,24 @@ img {
   list-style-type: disc;
   margin-left: 28px;
 }
-.content-recruitment .content-recruit .recruit-button {
+.content-recruit-outside__btn {
   position: absolute;
-  right: 33px;
-  bottom: 27px;
-}
-.content-recruitment .content-recruit .recruit-button button {
-  width: 207px;
-  height: 55px;
+  right: 3.3rem;
+  bottom: 2.7rem;
+  width: 20.7rem;
+  height: 5.5rem;
   background: #43BAFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
+}
+.content-recruit-outside:last-child {
+  margin-bottom: 10rem;
 }
 
 .content-webstore-heading {
@@ -1306,7 +1198,8 @@ img {
   left: 1.4rem;
   right: 1.5rem;
   background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #3C576F 100%);
-  animation: show 0.8s linear;
+  -webkit-animation: show 0.8s linear;
+          animation: show 0.8s linear;
 }
 .content-webstore-outside__list .over-show-title {
   font-size: 1.8rem;
@@ -1920,4 +1813,311 @@ img {
   font-size: 2rem;
   border: none;
   background: transparent;
+}
+
+.recruit-btn {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 16.8rem;
+  width: 9.6rem;
+  height: 9.6rem;
+  border: none;
+  border-radius: 50%;
+  background: #3BA5E3;
+  box-shadow: -0.2rem 0.3rem 1.2rem 0.2rem rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.recruit-btn a {
+  color: #fff;
+}
+
+.call-btn {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0px;
+  background: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 0;
+  width: 110px;
+  height: 110px;
+  z-index: 5;
+}
+.call-btn-zoomIn {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0FD186;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.call-btn-tada {
+  background: #0FD186;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  -webkit-animation-name: tada;
+          animation-name: tada;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.call-btn-tada a:before {
+  font-family: FontAwesome;
+  content: "\f095";
+  font-size: 25px;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+.call-btn-pulse {
+  width: 60px;
+  height: 60px;
+  background: #0FD186;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes tada {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes tada {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+@-webkit-keyframes pulse {
+  from {
+    width: 55px;
+    height: 55px;
+    margin-top: -27.5px;
+    margin-left: -27.5px;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+@keyframes pulse {
+  from {
+    width: 55px;
+    height: 55px;
+    margin-top: -27.5px;
+    margin-left: -27.5px;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+}
+@keyframes zoomIn {
+  from {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+}
+.request-btn {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 0;
+  width: 26.9rem;
+  height: 4.7rem;
+  background: #3BA5E3;
+  border-radius: 1rem 1rem 0 0;
+  color: #fff;
+  font-size: 1.7rem;
+  border: none;
+  z-index: 2;
+}
+
+.modal-request {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 6;
+}
+.modal-request .form-contact {
+  padding: 0;
+  margin-left: 0.1rem;
+}
+.modal-request-container {
+  width: 60.7rem;
+  min-height: 20rem;
+  border-radius: 2rem;
+  background: #fff;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: modalFaceIn ease 0.6s;
+          animation: modalFaceIn ease 0.6s;
+}
+.modal-request-container__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.modal-request-container__logo {
+  width: 21rem;
+  height: 2.637rem;
+  margin: 0 auto 5.3rem;
+  padding-top: 5.5rem;
+}
+.modal-request-container__contact {
+  padding: 0 6rem 5.8rem;
+  color: #565656;
+}
+.modal-request-container__contact .form-control {
+  font-size: 1.8rem;
+  padding-left: 1.2rem;
+  outline: none;
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  margin-bottom: 2.8rem;
+}
+.modal-request-container__contact--content {
+  font-size: 1.8rem;
+  outline: none;
+}
+.modal-request-container__contact--content textarea {
+  width: 100%;
+  height: 13.1rem;
+  border: 1px solid #424242;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.modal-request-container__contact--btn {
+  background: #08659E;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.9rem 2.3rem 1.1rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2.4rem;
+  border: none;
+}
+.modal-request.visible {
+  display: flex;
+}
+
+@-webkit-keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-14rem);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+
+@keyframes modalFaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(-14rem);
+  }
+  to {
+    opacity: 1;
+    transform: 0;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 7rem;
+  right: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid #0FD186;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */
