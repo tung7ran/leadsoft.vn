@@ -1,7 +1,7 @@
 @import 'variables';
 .content-knowledge {
     .border-1 {
-        border: 1px solid #cecece;
+        border: 1px solid $Bgcolor-borderKnowledge;
         width: 26.6rem;
     }
     .mb-0 {
@@ -31,7 +31,7 @@
                 position: relative;
                 width: 25rem;
                 height: 36rem;
-                border: 1px solid #9f9f9f;
+                border: 1px solid $color-borderStore;
                 border-radius: 1rem;
                 margin: 0 auto 5.3rem;
                 &-image {

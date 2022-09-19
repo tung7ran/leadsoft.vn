@@ -15,7 +15,7 @@
         transform: translateX(-50%);
         width: 16.8rem;
         height: 0.3rem;
-        background-color: #EC2028;
+        background-color: $Bgcolor-after;
     }
     &-text {
         text-align: center;
@@ -32,7 +32,7 @@
             margin-right: 4rem;
             margin-top: 2rem;
             border-radius: 2.5rem;
-            border: 1px solid #9F9F9F;
+            border: 1px solid $color-borderStore;
             &--link {
                 display: block;
                 padding: 0 1.5rem;
@@ -46,7 +46,7 @@
             }
         }
         &__item.active {
-            background-color: #3882B1;
+            background-color: $Bgcolor-activeStore;
             font-weight: bold;
             a {
                 color: $white;
@@ -69,7 +69,7 @@
                 bottom: 0;
                 left: 1.4rem;
                 right: 1.5rem;
-                background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, #3C576F 100%);
+                background: linear-gradient(180deg, #d9d9d900 0%, #3C576F 100%);
                 animation: show 0.8s linear;
                 &-title {
                     font-size: 1.8rem;
@@ -96,7 +96,7 @@
                         font-size: 1.4rem;
                         font-family: Roboto-Regular;
                         color: $black;
-                        background-color: #FFB607;
+                        background-color: #ffb607;
                         border-radius: 0.5rem;
                         border: none;
                         padding: 0.2rem 0.8rem;
@@ -105,7 +105,7 @@
                         font-size: 1.4rem;
                         font-family: Roboto-Regular;
                         color: $white;
-                        background-color: #43BAFF;
+                        background-color: $color-main;
                         border-radius: 0.5rem;
                         border: none;
                         padding: 0.2rem 0.8rem;

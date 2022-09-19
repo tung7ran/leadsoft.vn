@@ -62,6 +62,16 @@ $(document).ready(function(){
       prevArrow: false,
   });
 
+  $('.consulting-team-outside__list').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: false,
+    nextArrow: false,
+  });
+
   $(".request-btn").click(function(event){
     $(".modal-request").addClass("visible");
   });
