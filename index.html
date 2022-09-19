@@ -19,14 +19,17 @@
         <header class="header">
             <div class="container">
                 <div class="header-outside row">
-                    <div class="header-outside-logo col-xl-3">
+                    <div class="header-outside-logo col-xl-3 col-10">
                         <div class="header-outside-logo__image">
                             <a href="#">
                                 <img src="./images/logo/logo.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="header-outside-nav col-xl-9">
+                    <div class="header-outside-nav col-xl-9 js-mobile-menu">
+                        <div class="mobile-logo">
+                            <img src="./images/logo/logo.png" alt="">
+                        </div>
                         <ul class="header-outside-nav__list">
                             <li class="header-outside-nav__list--item">
                                 <a href="#" class="header-outside-nav__list--item-link">
@@ -65,6 +68,10 @@
                             </li>
                         </ul>
                     </div>
+                    <button class="navbar-mobile js-moblie-navbar col-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="mobile-menu-overlay"></div>
                 </div>
             </div>
         </header>
@@ -100,7 +107,7 @@
                             <img src="./images/right-bg.png" alt="">
                         </div>
                         <div class="row">
-                            <div class="col-xl-4 home-service-list__item mb-64">
+                            <div class="col-xl-4 home-service-list__item mb-64 mobile-show">
                                 <span class="home-service-list__item--number">01</span>
                                 <h5 class="home-service-list__item--heading">Tư Vấn Tổng Thể</h5>
                                 <p class="home-service-list__item--text">Phân tích đánh giá nhu cầu, 

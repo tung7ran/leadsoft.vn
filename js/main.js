@@ -102,6 +102,26 @@ $(document).ready(function(){
       behavior: "smooth",
     })
   })
+
+  $('.js-moblie-navbar').click(function() { 
+    $('.js-mobile-menu').toggleClass('show'); 
+    $('.mobile-menu-overlay').toggleClass('show');  
+    if($('.js-mobile-menu').hasClass('show') === true) {
+      $('.navbar-mobile').css("color", "#000")
+    } else { 
+      $('.navbar-mobile').css("color", "#fff")
+    }
+  })
+  $(".mobile-menu-overlay").click(function() {
+    $('.js-mobile-menu').addClass('show'); 
+    $('.mobile-menu-overlay').toggleClass('show');
+    if($('.js-mobile-menu').hasClass('show') === true) {
+      $('.navbar-mobile').css("color", "#000")
+    } else { 
+      $('.navbar-mobile').css("color", "#fff")
+    } 
+  });
+
 })
 
   

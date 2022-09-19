@@ -2,8 +2,8 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
-@import 'base';
 @import 'home';
+@import 'base';
 @import 'about-us';
 @import 'contact';
 @import 'service';
@@ -12,6 +12,8 @@
 @import 'news';
 @import 'post-detail';
 @import 'web-knowledge';
+@import 'responsiveHeader';
+@import 'responsiveHome';
 
 
 .price-list {

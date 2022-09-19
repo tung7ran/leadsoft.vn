@@ -1,4 +1,9 @@
 @import 'variables';
+.mobile-logo,
+.navbar-mobile,
+.mobile-menu-overlay {
+	display: none;
+}
 .header {
     border-bottom: 0.3rem solid $color-main;
 	position: fixed;
