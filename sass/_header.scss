@@ -1,7 +1,6 @@
 @import 'variables';
-
 .header {
-    border-bottom: 0.3rem solid #43baff;
+    border-bottom: 0.3rem solid $color-main;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -9,13 +8,12 @@
 	z-index: 5;
 	background-color: $white;
     &-outside {
-        background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 0);
         height:7.7rem;
         align-items: center;
         &-logo {
             &__image {
-                width:210px;
-                height:26.367px;
+                width: 21rem;
+                height: 2.6367rem;
                 float: right;
                 margin-right: 1.2rem;
             }
@@ -40,7 +38,7 @@
 }
 .home-sidebar {
 	position: relative;
-	background-color:#1f1f1f;
+	background-color: $Bgcolor-sidebar;
 	margin-top: 7.8rem;
 	&-image {
 		height: 75.5rem;
@@ -54,12 +52,12 @@
 		position: absolute;
 		inset: 0;
 		&__prev {
-			width:4.5rem;
-			height:4.5rem;
-			position:absolute;
-			left:7.1rem;
-			top:40rem;
-			background-color:#424242b5;
+			width: 4.5rem;
+			height: 4.5rem;
+			position: absolute;
+			left: 7.1rem;
+			top: 40rem;
+			background-color: $Bgcolor-nextprev;
 			border-radius: 50%;
 			cursor: pointer;
 			&--image {
@@ -76,12 +74,12 @@
 			}
 		}
 		&__next { 
-			width:4.5rem;
-			height:4.5rem;
-			position:absolute;
+			width: 4.5rem;
+			height: 4.5rem;
+			position: absolute;
 			right: 7rem;
-			top:40rem;
-			background-color:#424242b5;
+			top: 40rem;
+			background-color: $Bgcolor-nextprev;
 			border-radius: 50%;
 			cursor: pointer;
 			&--image {

@@ -3,60 +3,60 @@
     &-outside {
         width:100%;
         height: 68.5rem;
+		background-color: $Bgcolor-footer;
+		&-logo {
+			width:26.6rem;
+			height: 3.3rem;
+			margin: 0 auto 5.8rem; 
+			padding-top: 5.4rem;
+		}
 		&-top {
-			background-color: #43BAFF;
 			padding-top: 2.2rem;
 			padding-bottom: 2.2rem;
 			&__location,
 			&__tel,
 			&__email {
-				display: flex;
-				width:28.3rem;
-				height:15.8rem;
+				width: 36.3rem;
+				height:13.5rem;
 				border-top-left-radius:1rem;
 				border-top-right-radius:1rem;
 				border-bottom-left-radius:1rem;
 				border-bottom-right-radius:1rem;
 				border: 2px solid $white;
 				margin: 0 auto;
+				background-color: $white;
 				&--image {
-					margin: auto 2.8rem;
+					margin: 3.2rem auto 1.3rem;
+					text-align: center;
 				}
 				&--info {
 					margin: auto;
-					&-heading {
-						color: $white;
-						width: 10.72rem;
-						height: 2.37rem;
-						font-family: Inter-SemiBold;
-						text-align: left;
-						font-size: 1.8rem;
-						letter-spacing: 0;
-					}
+					color: $black;
 					&-text {
-						color: $white;
-						width: 19.6rem;
 						height: 2.26rem;
 						font-family: Inter-Regularnter;
-						text-align: left;
+						text-align: center;
 						font-size: 1.7rem;
 						letter-spacing: 0;
 					}
+				}
+			}
+			&__location {
+				&--image {
+					width: 4.4rem;
+					height: 4.2rem;
 				}
 			}
 			&__email {
 				&--image {
 					font-size: 4.2rem;
 					i {
-						color: $white;
+						color: $black;
 					}
 				}
 			}
 		}
         &-bottom {
-            background-color:#1a1a1a;
-            width:100%;
-            height:48.3rem;
 			&__info {
 				&--heading {
 					color:$white;
@@ -70,22 +70,16 @@
 					position: absolute;
 					left: 0;
 					top: 3.4rem;
-					background-color:#43baff;
+					background-color: $color-main;
 					width: 17rem;
 					height: 0.3rem;
-				} 
-				&--logo {
-					width:26.6rem;
-					height: 3.3rem;
-					margin-bottom: 3rem;
 				}
 				&--text {
-					color:$white;
-					width:36.3rem;
-					height:16.1rem;
-					text-align:left;
-					font-size:1.7rem;
-					letter-spacing:0;
+					color: $white;
+					width: 36.3rem;
+					height: 16.1rem;
+					text-align: left;
+					font-size: 1.7rem;
 				}
 			}
 			&__contact {
@@ -101,7 +95,7 @@
 					position: absolute;
 					left: 0;
 					top: 3.4rem;
-					background-color:#43baff;
+					background-color:$color-main;
 					width: 8.8rem;
 					height: 0.3rem;
 				} 
@@ -125,7 +119,7 @@
 					position: absolute;
 					left: 0;
 					top: 3.4rem;
-					background-color:#43baff;
+					background-color: $color-main;
 					width: 10.7rem;
 					height: 0.3rem;
 				} 
@@ -134,7 +128,7 @@
 					&-item {
 						width: 3.3rem;
 						height: 3.3rem;
-						background-color: #000;
+						background-color: $black;
 						border: 1px solid $white;
 						margin-right: 2rem;
 						&--link {

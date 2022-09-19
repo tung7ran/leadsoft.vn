@@ -288,18 +288,17 @@
 
     &-outside {
         &__list {
-            display: flex;
-            justify-content: space-between;
+            height: 30rem;
             margin-bottom: 8rem;
+            overflow: hidden;
             &--item {
                 background: $white;
                 box-shadow: 0px 4px 4px $color-boxshadow;
                 border-radius: 10px;
-                > img {
-                    border-radius: 1rem;
-                }
+                margin: 0 2rem;
+                display: inline-block;
                 .consulting-team-border {
-                    border-top: 3px solid $Bgcolor-after;
+                    border-top: 5px solid $Bgcolor-after;
                 }
                 &-heading {
                     font-size: 1.8rem;
@@ -369,6 +368,7 @@
         background: transparent;
     }
 }
+// action-contact button 
 .recruit-btn {
     position: fixed;
     right: 2.5rem;

@@ -12,7 +12,7 @@
             width: 29.3rem;
             height: 4.2rem;
             font-size: 1.6rem;
-            background: #fafafa;
+            background: $Bgcolor-search;
             border-radius: 3rem;
             border: 1px solid #797979;
             color: #616161;
@@ -31,7 +31,7 @@
             position: relative;
             width: 27rem;
             height: 36rem;
-            border: 1px solid #9f9f9f;
+            border: 1px solid $color-borderStore;
             border-radius: 1rem;
             margin: 0 auto 5.3rem;
             &--image {

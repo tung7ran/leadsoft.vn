@@ -32,7 +32,7 @@
         position: relative;
         width: 114rem;
         height: 55rem;
-        border: 1px solid #4d4d4d;
+        border: 1px solid $color-Recruit;
         border-radius: 2rem;
         padding: 4rem 7rem;
         margin: 0 auto 3rem;
@@ -46,7 +46,7 @@
                 line-height: 3.5rem;
             }
             span{
-                color: #4D4D4D;
+                color: $color-Recruit;
                 font-size: 1.6rem;
                 line-height: 2.2rem;
                 margin-top: 2.2rem;
@@ -65,8 +65,8 @@
                 line-height: 2.3rem;
                 border: none;
                 margin-left: 6.6rem;
-                color: #43BAFF;
-                background: #ffffff;
+                color: $color-main;
+                background: $white;
                 position: absolute;
                 right: 20rem;
                 bottom: 2rem;
@@ -79,14 +79,14 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 22px;
-                color: #4D4D4D;
+                color: $color-Recruit;
             }
             &--list {
                 &-item {
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 22px;
-                    color: #4D4D4D;
+                    color: $color-Recruit;
                     list-style-type: disc;
                     margin-left: 28px;
                 }   
@@ -98,7 +98,7 @@
             bottom: 2.7rem;
             width: 20.7rem;
             height: 5.5rem;
-            background: #43BAFF;
+            background: $color-main;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border: none;
             border-radius: 2rem;
