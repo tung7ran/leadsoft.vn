@@ -18,7 +18,7 @@
                 left: 0;
                 background-color: #383838;
                 width: 34rem;
-                min-height: 86rem;
+                min-height: 170rem;
                 animation: shownav ease 0.6s;
                 z-index: 1;
                 .mobile-logo {
@@ -61,7 +61,7 @@
         }
         .mobile-menu-overlay {
             position: absolute;
-            height: 86rem;
+            height: 170rem;
             inset: 0;
             display: block;
             background: rgba(0, 0, 0, 0.5);

@@ -1,0 +1,92 @@
+@import 'variables';
+//mobile
+@include responsive_mobile {
+    .footer {
+        &-outside {
+            height: 100%;
+            padding-bottom: 10rem;
+            &-logo {
+                margin: 0 auto 8.1rem; 
+            }
+            &-top {
+                padding-top: 2.2rem;
+                padding-bottom: 2.2rem;
+                &__location,
+                &__tel,
+                &__email {
+                    margin: 0 auto 3rem;
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        margin-left: 1.5rem;
+                        font-weight: bold;
+                    }
+                    &--heading::after {
+                        width: 15rem;
+                    }
+                    &--text {
+                        width: 93%;
+                        height: 100%;
+                        margin: 0 1.5rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        margin-left: 1.5rem;
+                        font-weight: bold;
+                    }
+                    &--heading::after {
+                        width: 7.8rem;
+                    } 
+                    &--list {
+                        margin: 0 1.5rem;
+                    }
+                }
+                &__link {
+                    &--heading {
+                        margin-left: 1.5rem;
+                        font-weight: bold;
+                    }
+                    &--heading::after {
+                        width: 9.7rem;
+                    } 
+                    &--social {
+                        display: flex;
+                        margin: 0 1.5rem;
+                        &-item {
+                            width: 4.3rem;
+                            height: 4.3rem;
+                            &--link {
+                                svg {
+                                    width: 2.3rem;
+                                    height: 3.3rem;
+                                }
+                            }
+                        }
+                        &-item:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &__image {
+                    height: 1.3rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+                &__outside {
+                    display: flex;
+                    flex-wrap: wrap;
+                    &--left {
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                    }
+                    &--right {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

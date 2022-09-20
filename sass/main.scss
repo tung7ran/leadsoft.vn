@@ -13,6 +13,7 @@
 @import 'post-detail';
 @import 'web-knowledge';
 @import 'responsiveHeader';
+@import 'responsiveFooter';
 @import 'responsiveHome';
 
 
@@ -27,6 +28,12 @@
         margin-top: 14.5rem;
         span {
             color: $color-main;
+            margin-left: 2rem;
+        }
+        span:before { 
+            content: "-";
+            position: absolute;
+            left: 51.9%;
         }
     }
     &-heading::after {
@@ -58,7 +65,6 @@
             border-bottom-right-radius: 1rem;
             margin-top: 9rem;
             transition: transform linear 0.1s;
-            
             &--title { 
                 text-align:center;
                 letter-spacing:0;
@@ -70,25 +76,6 @@
                 position: relative;
                 span {
                     font-size: 1.6rem;
-                }
-                .price-list-advise__outside {
-                    background-color: #F0A21A;
-                    width: 6.1rem;
-                    height: 6.4rem;
-                    position: relative;
-                    top: -9rem;
-                    span { 
-                        transform: rotate(-46.323315221355664deg);
-                        color: $white;
-                        width:29px;
-                        height:30px;
-                        position:absolute;
-                        left: 0.5rem;
-                        top: 0;
-                        text-align:left;
-                        font-size: 1.1rem;
-                    }
-                    
                 }
             }
             .home-color-seo {
@@ -193,6 +180,11 @@
     }
 }
 .home-projects {
+    .mobile-slider-top,
+    .mobile-slider-between,
+    .mobile-slider-bottom {
+        display: none;
+    }
     height: 136.4rem;
     &-heading {
         position: relative;
@@ -262,6 +254,9 @@
     }
 }
 .consulting-team {
+    .mobile-team {
+        display: none;
+    }
     &-heading {
         position: relative;
         font-size: 3.8rem;
@@ -398,19 +393,19 @@
     background-color: transparent;
     cursor: pointer;
     font-size: 0;
-    width: 110px;
-    height: 110px;
+    width: 11rem;
+    height: 11rem;
     z-index: 5;
     &-zoomIn {
-        width: 80px;
-        height: 80px;
+        width: 8rem;
+        height: 8rem;
         border: 2px solid $color-active;
-        border-radius: 100px;
+        border-radius: 10rem;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -40px;
-        margin-left: -40px;
+        margin-top: -4rem;
+        margin-left: -4rem;
         animation-name: zoomIn;
         animation-duration: 1s;
         animation-iteration-count: infinite;
@@ -418,14 +413,14 @@
     }
     &-tada {
         background: $color-active;
-        border-radius: 100px;
-        width: 40px;
-        height: 40px;
+        border-radius: 10rem;
+        width: 4rem;
+        height: 4rem;
         position: absolute;
         left: 50%;
         top: 50%;
-        margin-top: -20px;
-        margin-left: -20px;
+        margin-top: -2rem;
+        margin-left: -2rem;
         animation-name: tada;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
@@ -435,25 +430,25 @@
         a:before {
             font-family: FontAwesome;
             content: "\f095";
-            font-size: 25px;
+            font-size: 2.5rem;
             text-decoration: none;
             color: #fff;
-            margin-left: 10px;
+            margin-left: 1rem;
             position: absolute;
             top: 50%;
-            margin-top: -10px;
+            margin-top: -1rem;
         }
     } 
     &-pulse {
-        width: 60px;
-        height: 60px;
+        width: 6rem;
+        height: 6rem;
         background: $color-active;
-        border-radius: 100px;
+        border-radius: 10rem;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -30px;
-        margin-left: -30px;
+        margin-top: -3rem;
+        margin-left: -3rem;
         animation-name: pulse;
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
@@ -471,30 +466,30 @@
 }
 @keyframes pulse {
     from {
-        width: 55px;
-        height: 55px;
-        margin-top: -27.5px;
-        margin-left: -27.5px;
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-top: -2.75rem;
+        margin-left: -2.75rem;
     }
     to {
-        width: 60px;
-        height: 60px;
-        margin-top: -30px;
-        margin-left: -30px;
+        width: 6rem;
+        height: 6rem;
+        margin-top: -3rem;
+        margin-left: -3rem;
     }
 }
 @keyframes zoomIn {
     from {
-        width: 40px;
-        height: 40px;
-        margin-top: -20px;
-        margin-left: -20px;
+        width: 4rem;
+        height: 4rem;
+        margin-top: -2rem;
+        margin-left: -2rem;
     }
     to {
-        width: 80px;
-        height: 80px;
-        margin-top: -40px;
-        margin-left: -40px;
+        width: 8rem;
+        height: 8rem;
+        margin-top: -4rem;
+        margin-left: -4rem;
     }
 }
 .request-btn {
@@ -508,9 +503,12 @@
     color: $white;
     font-size: 1.7rem;
     border: none;
-    z-index: 2;
+    z-index: 5;
 }
 .modal-request {
+    .pd-0 {
+        padding: 0;
+    }
     .form-contact {
         padding: 0;
         margin-left: 0.1rem;
@@ -549,6 +547,13 @@
         &__contact {
             padding: 0 6rem 5.8rem;
             color: #565656;
+            &--number {
+                margin-left: 0.6rem;
+            }
+            &--select {
+                max-width: 25rem;
+                padding-right: 0;
+            }
             .form-control {
                 font-size: 1.8rem;
                 padding-left: 1.2rem;
@@ -605,11 +610,447 @@
     right: 3rem;
     width: 4rem;
     height: 4rem;
-    border: 4px solid $color-active;
+    border: none;
     outline: none;
     cursor: pointer;
-    padding: 1rem;
     border-radius: 50%;
     background: transparent;
     z-index: 1;
+}
+//Mobile
+@include responsive_mobile {
+    .slick-dots {
+        display: flex !important;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        list-style-type: none;
+        position: relative;
+            li {
+                margin: 0 0.5rem;
+            }
+            button {
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: $light-white;
+                text-indent: -9999px;
+            }
+            li.slick-active button {
+                background-color: $black;
+            }
+    }
+    .price-list {
+        .slick-dots {
+            top: 0;
+        }
+        height: 86.6rem;
+        &-heading {
+            font-size: 2.8rem;
+            width: 70%;
+            margin: 5.7rem auto 0;
+            span {
+                display: block;
+                margin-top: 1.8rem;
+                margin-left: 0;
+            }
+            span:before { 
+                display: none;
+            }
+        }
+        &-heading::after {
+            top: 7.5rem;
+            width: 7.8rem;
+        }
+        &-text {
+            font-size: 1.4rem;
+            width: 83%;
+            margin: 3.6rem auto 0;
+        }
+        &-outside {
+            &__inside { 
+                width: 80%;
+                height: 58.3rem;
+                margin: 10rem auto 2rem;
+                transition: transform;
+                &--title { 
+                    font-size: 5rem;
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+                .home-color-support {
+                    padding-bottom: 5.3rem;
+                    padding-top: 0;
+                    span {
+                        line-height: 1.4em;
+                        margin-top: 2rem;
+                    }
+                    .price-list-image {
+                        left: -0.16rem;
+                        width: 37.4rem;
+                        height: 20rem;
+                    }
+                }
+                .home-background-support {
+                    background-color: #C02C2C;
+                }
+                &--type { 
+                    height: 4.8rem;
+                    line-height: 4.8rem;
+                    text-align: center;
+                    background-color: $color-orange;
+    
+                    &-text { 
+                        color: $white;
+                        font-family: Inter;
+                        font-size: 1.5rem;
+                    }
+                }
+                &--list {
+                    &-item {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            &__inside:hover {
+                transform: translateY(0);
+            }
+        }
+    }
+    .home-projects {
+        .pc-slider-top,
+        .pc-slider-between,
+        .pc-slider-bottom {
+            display: none;
+        }
+        .mobile-slider-top,
+        .mobile-slider-between,
+        .mobile-slider-bottom {
+            display: block;
+        }
+        height: 136.4rem;
+        margin: 0 1.5rem;
+        &-heading {
+            font-size: 3rem;
+            padding-top: 9.3rem;
+        }
+        &-heading::after {
+            width: 14rem;
+        }
+        &-top,
+        &-between,
+        &-bottom {
+            &__inside {
+                height: 37rem;
+                left: 0;
+                &--heading {
+                    font-size: 1.8rem;
+                    position: relative;
+                    margin-top: 4rem;
+                    margin-left: 4rem;
+                }
+                &--text {
+                    font-size: 1.4rem;
+                    margin: 1.5rem 35% 2rem 4rem;
+                    height: 9rem;
+                }
+                &--btn {
+                    font-size: 1.6rem;
+                    padding: 0.8rem 3rem 0.9rem;
+                }
+            }
+        }
+        &-top {
+            top: 7rem;
+        }
+        &-between {
+            top: 9rem;
+        }
+        &-bottom {
+            top: 11rem;
+        }
+    }
+    .consulting-team {
+        .pc-slider-team {
+            display: none;
+        }
+        .mobile-team {
+            display: flex;
+        }
+        &-heading {
+            font-size: 3rem;
+        }
+        &-heading::after {
+            width: 14rem;
+        }
+        &-text {
+            font-size: 1.4rem;
+            width: 80%;
+            margin: 4.6rem auto 5.2rem;
+        }
+    
+        &-outside {
+            &__list {
+                height: 100%;
+                width: 96%;
+                margin: 0 auto 8rem;
+                &--item {
+                    width: 45.5%;
+                    margin: 0 1rem 2.5rem;
+                    padding: 0;
+                    &-heading {
+                        font-size: 1.8rem;
+                        font-family: Inter;
+                        font-weight: 600;
+                        color: $black;
+                        text-align: center;
+                        margin-top: 2.3rem;
+                        margin-bottom: 1rem;
+                    }
+                    span {
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        font-family: Inter;
+                        color: $Bgcolor-after;
+                        text-align: center;
+                        display: block;
+                        padding-bottom: 2.1rem;
+                    }
+                }
+            }
+        }
+    }
+    .recruit-btn {
+        // display: none;
+        left: 2rem;
+        bottom: 16.8rem;
+        width: 6.6rem;
+        height: 6.6rem;
+        font-size: 1.3rem;
+        z-index: 1;
+        a {
+            color: $white;
+        }
+    }
+    .call-btn {
+        width: 5.1rem;
+        height: 5.1rem;
+        left: 2.5rem;
+        bottom: 2.5rem;
+        &-zoomIn {
+            width: 2rem;
+            height: 2rem;
+            top: 61%;
+            left: 63%;
+        }
+        &-tada {
+            width: 3rem;
+            height: 3rem;
+            left: 59%;
+            top: 62%;
+        }
+        &-tada{
+            a:before {
+                font-size: 1.5rem;
+            }
+        } 
+        &-pulse {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    @keyframes pulse {
+        from {
+            width: 4.5rem;
+            height: 4.5rem;    
+            margin-top: -2rem;
+            margin-left: -2rem;
+        }
+        to {
+            width: 5rem;
+            height: 5rem;
+            margin-top: -2.5rem;
+            margin-left: -2.5rem;
+        }
+    }
+    @keyframes zoomIn {
+        from {
+            width: 3rem;
+            height: 3rem;
+            margin-top: -2rem;
+            margin-left: -2rem;
+        }
+        to {
+            width: 7rem;
+            height: 7rem;
+            margin-top: -4rem;
+            margin-left: -4rem;
+        }
+    }
+    .request-btn {
+        right: 2.5rem;
+        bottom: 0;
+        width: 18.9rem;
+        height: 3.7rem;
+        font-size: 1.6rem;
+    }
+    .modal-request {
+        &-container {
+            width: 43.7rem;
+            min-height: 20rem;
+            &__contact {
+                padding: 0 2rem 2.8rem;
+                .form-control {
+                    font-size: 1.6rem;
+                    padding-left: 1rem;
+                    border-radius: 0.5rem;
+                    margin-bottom: 1.8rem;
+                }
+                &--content {
+                    font-size: 1.6rem;
+                    textarea {
+                        height: 12.1rem;
+                    }
+                }
+                &--btn {
+                    font-size: 1.6rem;
+                    padding: 0.8rem 2rem 1rem;
+                }
+            }
+        }
+    }
+    #myBtn {
+        bottom: 7rem;
+        right: 3rem;
+        width: 3rem;
+        height: 3rem;
+        z-index: 3;
+    }
+    .ws-contact {
+        .recruit-btn {
+            right: 2rem;
+            bottom: 16.8rem;
+            width: 6.6rem;
+            height: 6.6rem;
+            font-size: 1.3rem;
+            z-index: 1;
+            a {
+                color: $white;
+            }
+        }
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 20px 30px 10px 0;
+        z-index: 9999;
+        &-icon {
+          display: block;
+          margin: 10px 0;
+          position: relative;
+          width: 50px;
+          height: 50px;
+          line-height: 70px;
+          text-align: center;
+          background: #6BB31E;
+          border-radius: 50%;
+          transition: 0.2s;
+          &:not(:last-child) {
+            transform: translateY(100%);
+            opacity: 0;
+            visibility: hidden;
+            &.is-active {
+              transform: translateY(0);
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          &::before {
+            content: "";
+            background: url("https://www.upsieutoc.com/images/2018/12/29/ZFUFPff.png") no-repeat;
+            background-size: contain;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            transition: 0.3s;
+          }
+          &::after {
+            content: attr(tooltip);
+            background: #fff;
+            color: #000;
+            border-radius: 50px;
+            padding: 10px;
+            position: absolute;
+            right: 100%;
+            line-height: 1;
+            min-width: 150px;
+            display: inline-block;
+            top: 8px;
+            margin-right: 10px;
+            font-size: 15px;
+            transition: 0.2s;
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+          }
+          &.is-active {
+            &::before {
+              background: url("https://www.upsieutoc.com/images/2018/12/29/0vsz83V.png") no-repeat;
+              background-size: contain;
+              width: 25px;
+              height: 25px;
+            }
+          }
+          &.mail {
+            background: #691FF0;
+            transition-delay: 200ms;
+            &::before {
+              background: url("https://www.upsieutoc.com/images/2018/12/29/K34s4SN.png") no-repeat;
+              background-size: contain;
+              width: 30px;
+              height: 30px;
+            }
+          }
+          &.facebook {
+            background: #231FF0;
+            transition-delay: 150ms;
+            &::before {
+              background: url("https://www.upsieutoc.com/images/2018/12/29/0FgYLEn.png") no-repeat;
+              background-size: contain;
+              width: 30px;
+              height: 30px;
+            }
+          }
+          &.message {
+            background: #1F7AF0;
+            transition-delay: 100ms;
+            &::before {
+              background: url("https://www.upsieutoc.com/images/2018/12/29/I6NY3Mi.png") no-repeat;
+              background-size: contain;
+              width: 30px;
+              height: 30px;
+            }
+          }
+          &.zalo {
+            background: #F1F1F1;
+            transition-delay: 50ms;
+            &::before {
+              background: url("https://www.upsieutoc.com/images/2018/12/29/Ph1kn8Y.png") no-repeat;
+              background-size: contain;
+              width: 30px;
+              height: 30px;
+            }
+          }
+          &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            &::after {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
 }

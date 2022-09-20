@@ -87,6 +87,7 @@
 			background-color: $Bgcolor-nextprev;
 			border-radius: 50%;
 			cursor: pointer;
+			z-index: 1;
 			&--image {
 				width: 1.4rem;
 				height: 2.4rem;
