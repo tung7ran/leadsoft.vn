@@ -19,14 +19,14 @@
         <header class="header">
             <div class="container">
                 <div class="header-outside row">
-                    <div class="header-outside-logo col-xl-3 col-10">
+                    <div class="header-outside-logo col-xl-2 col-md-2 col-10">
                         <div class="header-outside-logo__image">
                             <a href="#">
                                 <img src="./images/logo/logo.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="header-outside-nav col-xl-9 js-mobile-menu">
+                    <div class="header-outside-nav col-xl-9 col-md-9 js-mobile-menu">
                         <div class="mobile-logo">
                             <img src="./images/logo/logo.png" alt="">
                         </div>
@@ -68,6 +68,15 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="header-outside-language col-xl-1 col-md-1">
+                        <select name="sample" id="language" class="header-outside-language__control">
+                            <option value="En">
+                                
+                            </option>
+                            <option value="">Vietnamses</option>
+                            <option value="fa fa-address-card" class="fa"></option>
+                        </select>
+                    </div>
                     <button class="navbar-mobile js-moblie-navbar col-2">
                         <i class="fa-solid fa-bars"></i>
                     </button>
@@ -100,7 +109,7 @@
                             <img src="./images/right-bg.png" alt="">
                         </div>
                         <div class="row pc-slider">
-                            <div class="col-xl-4 home-service-list__item mb-64 ">
+                            <div class="col-xl-4 col-md-4 home-service-list__item mb-64 ">
                                 <span class="home-service-list__item--number">01</span>
                                 <h5 class="home-service-list__item--heading">Tư Vấn Tổng Thể</h5>
                                 <p class="home-service-list__item--text">Phân tích đánh giá nhu cầu, 
@@ -110,7 +119,7 @@
                                 <img src="./images/headset.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-xl-4 home-service-list__item mb-64">
+                            <div class="col-xl-4 col-md-4 home-service-list__item mb-64">
                                 <span class="home-service-list__item--number">02</span>
                                 <h5 class="home-service-list__item--heading">Phát triển ứng dụng chuyên ngành</h5>
                                 <p class="home-service-list__item--text">Tin học hóa quy trình nghiệp vụ đặc thù. Phát triển trên một nền tảng công nghệ thống nhất. 
@@ -120,7 +129,7 @@
                                 <img src="./images/ead-icon.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-xl-4 home-service-list__item mb-64">
+                            <div class="col-xl-4 col-md-4 home-service-list__item mb-64">
                                 <span class="home-service-list__item--number">03</span>
                                 <h5 class="home-service-list__item--heading">Tùy biến hệ thống ERP</h5>
                                 <p class="home-service-list__item--text">Một nền tảng duy nhất cho mọi nghiệp vụ kinh doanh của Doanh nghiệp: 
@@ -130,7 +139,7 @@
                                 <img src="./images/erp-02.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-xl-4 home-service-list__item">
+                            <div class="col-xl-4 col-md-4 home-service-list__item">
                                 <span class="home-service-list__item--number">04</span>
                                 <h5 class="home-service-list__item--heading">Xây dựng trang Thương mại điện tử</h5>
                                 <p class="home-service-list__item--text">Công cụ hiệu quả quảng bá sản phẩm, dịch vụ và bán hàng trực tuyến 
@@ -140,7 +149,7 @@
                                 <img src="./images/cart.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-xl-4 home-service-list__item">
+                            <div class="col-xl-4 col-md-4 home-service-list__item">
                                 <span class="home-service-list__item--number">05</span>
                                 <h5 class="home-service-list__item--heading">Thiết kế Website / Portal</h5>
                                 <p class="home-service-list__item--text">Xây dựng các trang thông tin điện tử với hệ thống CMS 
@@ -150,7 +159,7 @@
                                 <img src="./images/http-web.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-xl-4 home-service-list__item">
+                            <div class="col-xl-4 col-md-4 home-service-list__item">
                                 <span class="home-service-list__item--number">06</span>
                                 <h5 class="home-service-list__item--heading">Hợp tác đầu tư</h5>
                                 <p class="home-service-list__item--text">Với đội ngũ chuyên gia và kỹ sư CNTT nhiều kinh nghiệm, 
@@ -529,7 +538,7 @@
             <!-- hiện thị list các dữ liệu -->
             <section class="home-store">
                 <div class="container">
-                    <div class="home-store-heading">KHO GIAO DIỆN MẪU</div>
+                    <h4 class="home-store-heading">KHO GIAO DIỆN MẪU</h4>
                     <p class="home-store-text">Đa dạng, phù hợp với mọi đối tượng từ cá nhân đến doanh nghiệp</p>
                     <ul class="home-store-list">
                         <li class="home-store-list__item active">
@@ -2166,11 +2175,11 @@
                     <div class="footer-outside-bottom__image">
                         <img src="./images/image 29.png" alt="">
                     </div>
-                    <div class="footer-outside-bottom__outside container">
-                        <div class="footer-outside-bottom__outside--left">
+                    <div class="footer-outside-bottom__inside container">
+                        <div class="footer-outside-bottom__inside--left">
                             ©2022 Bản quyền thuộc về Leadsoft
                         </div>
-                        <div class="footer-outside-bottom__outside--right">
+                        <div class="footer-outside-bottom__inside--right">
                             Điều khoản & Điều kiện   /   Chính sách bảo mật   /   Liên hệ với chúng tôi
                         </div>
                     </div>
@@ -2235,15 +2244,16 @@
             <img src="./images/arrowTop.png" alt="">
         </button>
         <!-- action contact button mobile -->
-        <div class="ws-contact">
-            <button class="recruit-btn">
-                <a href="./recruitment.html">Tuyển dụng</a>
-            </button>
-            <a href="mailto:info@webseo247.com" tooltip="Send mail" class="ws-contact-icon mail"></a>
-            <a href="https://www.facebook.com/WebSeoVietNam" tooltip="Fanpage Facebook" class="ws-contact-icon facebook" target="_blank"></a>
-            <a href="https://m.me/WebSeoVietNam" tooltip="Inbox to me" class="ws-contact-icon message" target="_blank"></a>
-            <a href="https://zalo.me/0973529090" tooltip="Chat with me" class="ws-contact-icon zalo" target="_blank"></a>
-            <a href="javascript:void(0);" tooltip="Contact Info" class="ws-contact-icon btnn"></a>
+        <div class="wrapper-mobile">
+            <div class="wrapper-mobile-main">
+              <div class="wrapper-mobile-main__button" class="wave open">
+                <i class="fas fa-comments"></i>
+              </div>
+              <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="messenger-color"><i class="fab fa-facebook-messenger"></i></a>
+              <a href="./recruitment.html" class="recruit-color"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
