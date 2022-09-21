@@ -1,5 +1,6 @@
 @import 'variables';
-//mobile
+
+//Mobile
 @include responsive_mobile {
     .footer {
         &-outside {
@@ -75,15 +76,91 @@
                     margin-top: 2rem;
                     margin-bottom: 1rem;
                 }
-                &__outside {
+                &__inside {
                     display: flex;
                     flex-wrap: wrap;
+                    margin-left: 1rem;
+                    width: 80%;
                     &--left {
                         font-size: 1.6rem;
                         margin-bottom: 1rem;
                     }
                     &--right {
                         font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//Mobile Low
+@include responsive_mobilelow {
+    .footer {
+        &-outside {
+            &-top {
+                padding-top: 0;
+                padding-bottom: 0;
+                &__location,
+                &__tel,
+                &__email {
+                    width: 33.3rem;
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        font-size: 2rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        width: 14rem;
+                    }
+                    &--text {
+                        font-size: 1.6rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        font-size: 2rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        width: 6.8rem;
+                    } 
+                    &--list {
+                        margin: 0 1.5rem;
+                        &-item {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                &__link {
+                    &--heading {
+                        font-size: 2rem;
+                        margin-bottom: 4rem;
+                    }
+                    &--heading::after {
+                        width: 9.7rem;
+                    } 
+                    &--social {
+                        &-item {
+                            &--link {
+                                padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+                            }
+                        }
+                    }
+                }
+                &__image {
+                    height: 1.3rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+                &__inside {
+                    &--left {
+                        font-size: 1.5rem;
+                    }
+                    &--right {
+                        font-size: 1.5rem;
                     }
                 }
             }

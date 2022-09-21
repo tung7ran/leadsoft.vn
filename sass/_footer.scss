@@ -2,7 +2,7 @@
 .footer {
     &-outside {
         width:100%;
-        height: 68.5rem;
+        height: 65.5rem;
 		background-color: $Bgcolor-footer;
 		&-logo {
 			width:26.6rem;
@@ -144,11 +144,14 @@
 				}
 			}
 			&__image {
-				height: 1.3rem;
+				height: 1rem;
 				margin-top: 2rem;
 				margin-bottom: 2rem;
+				img {
+					height: 100%;
+				}
 			}
-			&__outside {
+			&__inside {
 				display: flex;
 				justify-content: space-between;
 				&--left {

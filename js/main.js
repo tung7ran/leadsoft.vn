@@ -43,7 +43,7 @@ $(document).ready(function(){
 
     // Display active tab
     let currentTab = $(this).attr('href');
-    $('.tabs-content div').hide();
+    $('.tabs-content > div').hide();
     $(currentTab).show();
 
     return false;
@@ -158,11 +158,10 @@ $(document).ready(function(){
     } 
   });
 
-
-  $('.ws-contact-icon.btnn').click(function(){
-    $('.ws-contact-icon').toggleClass('is-active');
+  $('.wrapper-mobile-main__button').click(function () { 
+    this.children.item(0).classList.toggle('fa-times');
+    this.classList.toggle('open');
   });
-
 })
 
   

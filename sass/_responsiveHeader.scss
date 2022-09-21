@@ -1,5 +1,19 @@
 @import 'variables';
-
+//Mobile Low
+@include responsive_mobilelow {
+    .header {
+        &-outside {
+            &-nav {
+                width: 27rem !important;
+                .mobile-logo {
+                    display: block;
+                    width: 19rem !important;
+                    margin: 1.8rem 0 2.8rem 3.2rem !important;
+                }
+            }
+        }
+    }
+}
 //Mobile
 @include responsive_mobile {
     .header {
@@ -47,6 +61,9 @@
             &-nav.show { 
                 display: none;
             }
+            &-language {
+                display: none;
+            }
         }
         .navbar-mobile {
             display: block;
@@ -90,6 +107,74 @@
             }
             &__next { 
                 display: none;
+            }
+        }
+    }
+}
+//Tablet
+@include responsive_tablet {
+    .header {
+        &-outside {
+            height:7.7rem;
+            flex-wrap: nowrap;
+            &-logo {
+                &__image {
+                    width: 11rem;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                }
+            }
+            &-nav {
+                &__list {
+                    justify-content: flex-start;
+                    padding-top: 0.2rem;
+                    &--item {
+                        margin-right: 0;
+                        &-link {
+                            font-size: 1.24rem;
+                            min-width: 4.4rem;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            &-language {
+                &__control {
+                    font-size: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .home-sidebar {
+        &-image {
+            height: 100%;
+        }
+        &-control {
+            position: absolute;
+            inset: 0;
+            &__prev {
+                width: 3rem;
+                height: 3rem;
+                left: 3.1rem;
+                top: 18rem;
+                &--image {
+                    width: 1rem;
+                    height: 2rem;
+                    right: -1rem;
+                }
+            }
+            &__next { 
+                width: 3rem;
+                height: 3rem;
+                right: 3.1rem;
+                top: 18rem;
+                z-index: 1;
+                &--image {
+                    width: 1rem;
+                    height: 2rem;
+                    right: -1.1rem;
+                }
             }
         }
     }

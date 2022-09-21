@@ -16,6 +16,9 @@
 @import 'responsiveFooter';
 @import 'responsiveHome';
 
+.wrapper-mobile-main {
+    display: none;
+}
 
 .price-list {
     height: 80.6rem;
@@ -802,30 +805,12 @@
                     width: 45.5%;
                     margin: 0 1rem 2.5rem;
                     padding: 0;
-                    &-heading {
-                        font-size: 1.8rem;
-                        font-family: Inter;
-                        font-weight: 600;
-                        color: $black;
-                        text-align: center;
-                        margin-top: 2.3rem;
-                        margin-bottom: 1rem;
-                    }
-                    span {
-                        font-size: 1.8rem;
-                        font-weight: 600;
-                        font-family: Inter;
-                        color: $Bgcolor-after;
-                        text-align: center;
-                        display: block;
-                        padding-bottom: 2.1rem;
-                    }
                 }
             }
         }
     }
     .recruit-btn {
-        // display: none;
+        display: none;
         left: 2rem;
         bottom: 16.8rem;
         width: 6.6rem;
@@ -924,133 +909,183 @@
         }
     }
     #myBtn {
-        bottom: 7rem;
+        bottom: 6rem;
         right: 3rem;
         width: 3rem;
         height: 3rem;
         z-index: 3;
     }
-    .ws-contact {
-        .recruit-btn {
-            right: 2rem;
-            bottom: 16.8rem;
-            width: 6.6rem;
-            height: 6.6rem;
-            font-size: 1.3rem;
-            z-index: 1;
-            a {
-                color: $white;
-            }
-        }
+    .wrapper-mobile-main {
         position: fixed;
-        bottom: 0;
-        right: 0;
-        margin: 20px 30px 10px 0;
-        z-index: 9999;
-        &-icon {
-          display: block;
-          margin: 10px 0;
-          position: relative;
-          width: 50px;
-          height: 50px;
-          line-height: 70px;
-          text-align: center;
-          background: #6BB31E;
-          border-radius: 50%;
-          transition: 0.2s;
-          &:not(:last-child) {
-            transform: translateY(100%);
-            opacity: 0;
-            visibility: hidden;
-            &.is-active {
-              transform: translateY(0);
-              opacity: 1;
-              visibility: visible;
-            }
-          }
-          &::before {
-            content: "";
-            background: url("https://www.upsieutoc.com/images/2018/12/29/ZFUFPff.png") no-repeat;
-            background-size: contain;
-            width: 30px;
-            height: 30px;
-            display: inline-block;
-            transition: 0.3s;
-          }
-          &::after {
-            content: attr(tooltip);
-            background: #fff;
-            color: #000;
-            border-radius: 50px;
-            padding: 10px;
+        right: 1.8rem;
+        bottom: 11.2rem;
+        z-index: 2;
+        display: block;
+        &__button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: absolute;
-            right: 100%;
-            line-height: 1;
-            min-width: 150px;
-            display: inline-block;
-            top: 8px;
-            margin-right: 10px;
-            font-size: 15px;
-            transition: 0.2s;
-            opacity: 0;
-            visibility: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,.2);
-          }
-          &.is-active {
-            &::before {
-              background: url("https://www.upsieutoc.com/images/2018/12/29/0vsz83V.png") no-repeat;
-              background-size: contain;
-              width: 25px;
-              height: 25px;
-            }
-          }
-          &.mail {
-            background: #691FF0;
-            transition-delay: 200ms;
-            &::before {
-              background: url("https://www.upsieutoc.com/images/2018/12/29/K34s4SN.png") no-repeat;
-              background-size: contain;
-              width: 30px;
-              height: 30px;
-            }
-          }
-          &.facebook {
-            background: #231FF0;
-            transition-delay: 150ms;
-            &::before {
-              background: url("https://www.upsieutoc.com/images/2018/12/29/0FgYLEn.png") no-repeat;
-              background-size: contain;
-              width: 30px;
-              height: 30px;
-            }
-          }
-          &.message {
-            background: #1F7AF0;
-            transition-delay: 100ms;
-            &::before {
-              background: url("https://www.upsieutoc.com/images/2018/12/29/I6NY3Mi.png") no-repeat;
-              background-size: contain;
-              width: 30px;
-              height: 30px;
-            }
-          }
-          &.zalo {
-            background: #F1F1F1;
-            transition-delay: 50ms;
-            &::before {
-              background: url("https://www.upsieutoc.com/images/2018/12/29/Ph1kn8Y.png") no-repeat;
-              background-size: contain;
-              width: 30px;
-              height: 30px;
-            }
-          }
-          &:hover {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            &::after {
-              opacity: 1;
-              visibility: visible;
-            }
-          }
+            right: 0;
+            bottom: 0;
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            color: $white;
+            cursor: pointer;
+            background-color: $color-active;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
         }
-      }
+        &__button ~ a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            opacity: 0;
+            text-decoration: none;
+            color: #fff;
+            background-color: #fff;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            transition: .2s all linear;
+            -webkit-transition: .2s all linear;
+            -moz-transition: .2s all linear;
+            -ms-transition: .2s all linear;
+            -o-transition: .2s all linear;
+        }
+        &__button ~ .telegram-color {
+            background: linear-gradient(0deg, #017AB1, #01ABE6);
+        }
+        &__button ~ .whatsapp-color {
+            background: linear-gradient(0deg, #00B100, #09db09);
+        }
+        &__button ~ .messenger-color {
+            background: linear-gradient(0deg, #0078FF, #00C6FF);
+        }
+        &__button ~ .recruit-color {
+            background: linear-gradient(0deg, #177bee, #11323b);
+        }
+        &__button.open ~ a {
+            opacity: 1;
+            transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+            -webkit-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+            -moz-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+            -ms-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+            -o-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+        }
+        &__button.open ~ a:nth-of-type(1) {
+            bottom: 60px;
+        }
+        &__button.open ~ a:nth-of-type(2) {
+            bottom: 120px;
+        }
+        &__button.open ~ a:nth-of-type(3) {
+            bottom: 180px;
+        }
+        &__button.open ~ a:nth-of-type(4) {
+            bottom: 240px;
+        }
+        .wave {
+            animation-name: wave;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes wave {
+            0% {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+            100% {box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0);}
+        }
+        .open {
+            animation-iteration-count: 1;
+        }
+    }
+}
+//Mobile Low
+@include responsive_mobilelow {
+    .price-list {
+        .slick-dots {
+            top: 0;
+        }
+        height: 86.6rem;
+        &-heading {
+            font-size: 2.6rem;
+            width: 74%;
+        }
+        &-text {
+            width: 77%;
+        }
+        &-outside {
+            &__inside { 
+                width: 80%;
+                height: 61.3rem;
+                &--title { 
+                    font-size: 4.5rem;
+                    span {
+                        display: block;
+                        margin-top: 2.2rem;
+                        font-size: 1.6rem;
+                    }
+                }
+                .home-color-support {
+                    padding-bottom: 4rem;
+                    .price-list-image {
+                        left: -0.1rem;
+                        width: 28.9rem;
+                        height: 16rem;
+                    }
+                }
+            }
+        }
+    }
+    .home-projects {
+        height: 108.4rem;
+        &-heading {
+            padding-top: 7.3rem;
+        }
+        &-heading::after {
+            top: 11rem;
+        }
+        &-top,
+        &-between,
+        &-bottom {
+            &__inside {
+                height: 30rem;
+                &--btn {
+                    top: 3rem;
+                }
+            }
+        }
+    }
+    .consulting-team {
+        &-outside {
+            &__list {
+                margin: 0 auto 5rem;
+                &--item {
+                    width: 44.2%;
+                    &-heading {
+                        font-size: 1.6rem;
+                    }
+                    span {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
