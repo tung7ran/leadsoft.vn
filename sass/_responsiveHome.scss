@@ -150,6 +150,7 @@
                             &--heading {
                                 font-size: 1.7rem;
                                 margin-top: 3rem;
+                                padding-top: 0;
                             }
                             &--text {
                                 font-size: 1.3rem;
@@ -279,6 +280,197 @@
                         left: 11.8rem;
                         top: 3rem;
                     }
+                }
+            }
+        }
+        .home-store {
+            height: 87rem;
+            &-heading {
+                font-size: 3rem;
+            }
+            &-heading::after {
+                top: 14rem;
+                width: 15rem;
+            }
+            &-text {
+                margin-top: 4rem;
+            }
+            &-list {
+                flex-wrap: wrap;
+                margin-top: 4.2rem;
+                &__item {
+                    margin-bottom: 1.3rem;
+                    &--link {
+                        font-size: 1.4rem;
+                        padding-top: 0.2rem;
+                    }
+                }
+            }
+            &-images {
+                &__list {
+                    .over-show {
+                        right: 0.7rem;
+                        &-title {
+                            font-size: 1.5rem;
+                            top: 50%;
+                        }
+                        &-text {
+                            font-size: 1.3rem;
+                            top: 49%;
+                        }
+                        &-btn {
+                            top: 53%;
+                            &__demo {
+                                font-size: 1.1rem;
+                                padding: 0.3rem 0.4rem;
+                            }
+                            &__detail {
+                                font-size: 1.1rem;
+                                padding: 0.3rem 0.4rem;
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            &-btn {
+                font-size: 1.6rem;
+            }
+        }
+        .home-reason {
+            height: 98rem;
+            &-heading {
+                font-size: 3rem;
+                padding-top: 9.3rem;
+            }
+            &-heading::after {
+                top: 13rem;
+                width: 15.8rem;
+            }
+            &-text {
+                margin-top: 4rem;
+                margin-bottom: 6rem;
+            }
+            &-outside {
+                &__list {
+                    &--item {
+                        width: 34.8rem;
+                        height: 21.7rem;
+                        &-inside{
+                            &--image {
+                                padding-top: 1rem;
+                            }
+                            &--heading {
+                                font-size: 1.6rem;
+                                padding-top: 1rem;
+                            }
+                            &--text {
+                                font-size: 1.3rem;
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//PC low
+@include responsive_pclow {
+    .content-home {
+        .home-service{
+            &-list {
+                &__image {
+                    height: 68rem;
+                    right: -2.4rem;
+                    top: -8rem;
+                }
+                &__item {
+                    &--number { 
+                        font-size: 6rem;
+                    }
+                    &--heading{ 
+                        font-size: 1.8rem;
+                        min-height: 4rem;
+                    }
+                    &--text { 
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .home-store {
+            height: 100rem;
+            &-list {
+                flex-wrap: wrap;
+                margin-top: 4.2rem;
+                &__item {
+                    margin-bottom: 1.3rem;
+                    &--link {
+                        font-size: 1.4rem;
+                        padding-top: 0.2rem;
+                    }
+                }
+            }
+            &-btn {
+                font-size: 1.6rem;
+            }
+        }
+        .home-reason {
+            height: 74rem;
+            &-heading {
+                font-size: 3rem;
+                padding-top: 9.3rem;
+            }
+            &-heading::after {
+                top: 13rem;
+                width: 15.8rem;
+            }
+            &-text {
+                margin-top: 4rem;
+                margin-bottom: 6rem;
+            }
+            &-outside {
+                &__list {
+                    &--item {
+                        width: 30.4rem;
+                        height: 21.7rem;
+                        &-inside{
+                            &--image {
+                                padding-top: 1rem;
+                            }
+                            &--heading {
+                                font-size: 1.6rem;
+                                padding-top: 1rem;
+                            }
+                            &--text {
+                                font-size: 1.3rem;
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//PC medium
+@include responsive_pcmedium {
+    .home-store {
+        &-list {
+            flex-wrap: wrap;
+            &__item {
+                margin-bottom: 1.3rem;
+            }
+        }
+        &-btn {
+            font-size: 1.6rem;
+        }
+    }
+    .home-reason {
+        height: 74rem;
+        &-outside {
+            &__list {
+                &--item {
+                    width: 36.2rem !important;
                 }
             }
         }

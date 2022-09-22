@@ -179,3 +179,117 @@
         }
     }
 }
+//Pclow 
+@include responsive_pclow {
+    .header {
+        &-outside {
+            height:7.7rem;
+            flex-wrap: nowrap;
+            &-logo {
+                &__image {
+                    width: 100%;
+                    margin-right: 0;
+                    padding-top: 0.2rem;
+                }
+            }
+            &-nav {
+                &__list {
+                    &--item {
+                        margin-right: 1.4rem;
+                        &-link {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            &-language {
+                &__control {
+                    font-size: 1.4rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .home-sidebar {
+        &-image {
+            height: 100%;
+        }
+        &-control {
+            &__prev {
+                width: 3.5rem;
+                height: 3.5rem;
+                left: 3rem;
+                top: 50%;
+                transform: translateY(-50%);
+                &--image {
+                    width: 1rem;
+                    height: 2rem;
+                    right: -1.1rem;
+                }
+            }
+            &__next { 
+                width: 3.5rem;
+                height: 3.5rem;
+                right: 3rem;
+                top: 50%;
+                transform: translateY(-50%);
+                &--image {
+                    width: 1rem;
+                    height: 2rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -1.4rem;
+                }
+            }
+        }
+    }
+}
+//Pc medium 
+@include responsive_pcmedium {
+    .header {
+        &-outside {
+            &-logo {
+                &__image {
+                    width: 100%;
+                    margin-right: 1.2rem;
+                }
+            }
+            &-nav {
+                &__list {
+                    padding-top: 0.4rem;
+                    &--item {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            &-language {
+                &__control {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    .home-sidebar {
+        &-image {
+            height: 100%;
+        }
+        &-control {
+            &__prev {
+                left: 5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                &--image {
+                    right: -1.2rem;
+                }
+            }
+            &__next { 
+                right: 5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                &--image {
+                    right: -1.5rem;
+                }
+            }
+        }
+    }
+}

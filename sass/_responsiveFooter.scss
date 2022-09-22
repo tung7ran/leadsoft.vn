@@ -167,3 +167,164 @@
         }
     }
 }
+//Tablet
+@include responsive_tablet {
+    .footer {
+        &-outside {
+            width:100%;
+            height: 78.5rem;
+            &-logo {
+                margin: 0 auto 5rem; 
+                padding-top: 5.4rem;
+            }
+            &-top {
+                padding-top: 2.2rem;
+                padding-bottom: 2.2rem;
+                &__location,
+                &__tel,
+                &__email {
+                    width: 100%;
+                    &--image {
+                        margin: 2.2rem auto 1.3rem;
+                    }
+                    &--info {
+                        &-text {
+                            height: 100%;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        font-size: 1.8rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        top: 3rem;
+                        width: 13rem;
+                    }
+                    &--text {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.3rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        font-size:  1.8rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        top: 3rem;
+                        width: 6.4rem;
+                    } 
+                    &--list {
+                        &-item {
+                            font-size:1.3rem;
+                        }
+                    }
+                }
+                &__link {
+                    &--heading {
+                        font-size:  1.8rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        top: 3rem;
+                    } 
+                }
+                &__image {
+                    margin-top: 5.5rem;
+                }
+                &__inside {
+                    &--left {
+                        font-size: 1.5rem;
+                    }
+                    &--right {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//PC low
+@include responsive_pclow { 
+    .footer {
+        &-outside {
+            width:100%;
+            height: 75.5rem;
+            &-logo {
+                margin: 0 auto 5rem; 
+                padding-top: 5.4rem;
+            }
+            &-top {
+                padding-top: 2.2rem;
+                padding-bottom: 2.2rem;
+                &__location,
+                &__tel,
+                &__email {
+                    width: 100%;
+                    &--image {
+                        margin: 2.2rem auto 1.3rem;
+                    }
+                    &--info {
+                        &-text {
+                            height: 100%;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        margin-bottom: 4.5rem;
+                    }
+                    &--text {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        margin-bottom: 4.5rem;
+                    } 
+                    &--list {
+                        &-item {
+                            font-size:1.5rem;
+                        }
+                    }
+                }
+                &__link {
+                    &--heading {
+                        margin-bottom: 4.5rem;
+                    } 
+                }
+                &__image {
+                    margin-top: 5.5rem;
+                }
+                &__inside {
+                    &--left {
+                        font-size: 1.5rem;
+                    }
+                    &--right {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//PC medium
+@include responsive_pcmedium {
+    .footer {
+        &-outside {
+            width:100%;
+            height: 75.5rem;
+        }
+    }
+}
