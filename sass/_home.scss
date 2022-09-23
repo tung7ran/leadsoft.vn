@@ -3,6 +3,9 @@
     .mb-64 {
         margin-bottom: 6.4rem;
     }
+    .mobile-slider {
+        display: none;
+    }
     .home-service{
         &-outside { 
             width:80.9rem;
@@ -279,6 +282,7 @@
                             width: 6.5rem;
                             height: 6.6rem;
                             margin: 2.3rem auto 2.1rem;
+                            padding-top: 2rem;
                         }
                         &--heading {
                             font-size: 1.8rem;
@@ -286,6 +290,7 @@
                             color: $black;
                             text-align: center;
                             margin-bottom: 1.3rem;
+                            padding-top: 3rem;
                         }
                         &--text {
                             font-size: 1.4rem;

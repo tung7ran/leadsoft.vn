@@ -1,0 +1,330 @@
+@import 'variables';
+
+//Mobile
+@include responsive_mobile {
+    .footer {
+        &-outside {
+            height: 100%;
+            padding-bottom: 10rem;
+            &-logo {
+                margin: 0 auto 8.1rem; 
+            }
+            &-top {
+                padding-top: 2.2rem;
+                padding-bottom: 2.2rem;
+                &__location,
+                &__tel,
+                &__email {
+                    margin: 0 auto 3rem;
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        margin-left: 1.5rem;
+                        font-weight: bold;
+                    }
+                    &--heading::after {
+                        width: 15rem;
+                    }
+                    &--text {
+                        width: 93%;
+                        height: 100%;
+                        margin: 0 1.5rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        margin-left: 1.5rem;
+                        font-weight: bold;
+                    }
+                    &--heading::after {
+                        width: 7.8rem;
+                    } 
+                    &--list {
+                        margin: 0 1.5rem;
+                    }
+                }
+                &__link {
+                    &--heading {
+                        margin-left: 1.5rem;
+                        font-weight: bold;
+                    }
+                    &--heading::after {
+                        width: 9.7rem;
+                    } 
+                    &--social {
+                        display: flex;
+                        margin: 0 1.5rem;
+                        &-item {
+                            width: 4.3rem;
+                            height: 4.3rem;
+                            &--link {
+                                svg {
+                                    width: 2.3rem;
+                                    height: 3.3rem;
+                                }
+                            }
+                        }
+                        &-item:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                &__image {
+                    height: 1.3rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+                &__inside {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: 1rem;
+                    width: 80%;
+                    &--left {
+                        font-size: 1.6rem;
+                        margin-bottom: 1rem;
+                    }
+                    &--right {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//Mobile Low
+@include responsive_mobilelow {
+    .footer {
+        &-outside {
+            &-top {
+                padding-top: 0;
+                padding-bottom: 0;
+                &__location,
+                &__tel,
+                &__email {
+                    width: 33.3rem;
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        font-size: 2rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        width: 14rem;
+                    }
+                    &--text {
+                        font-size: 1.6rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        font-size: 2rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        width: 6.8rem;
+                    } 
+                    &--list {
+                        margin: 0 1.5rem;
+                        &-item {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                &__link {
+                    &--heading {
+                        font-size: 2rem;
+                        margin-bottom: 4rem;
+                    }
+                    &--heading::after {
+                        width: 9.7rem;
+                    } 
+                    &--social {
+                        &-item {
+                            &--link {
+                                padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+                            }
+                        }
+                    }
+                }
+                &__image {
+                    height: 1.3rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+                &__inside {
+                    &--left {
+                        font-size: 1.5rem;
+                    }
+                    &--right {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//Tablet
+@include responsive_tablet {
+    .footer {
+        &-outside {
+            width:100%;
+            height: 78.5rem;
+            &-logo {
+                margin: 0 auto 5rem; 
+                padding-top: 5.4rem;
+            }
+            &-top {
+                padding-top: 2.2rem;
+                padding-bottom: 2.2rem;
+                &__location,
+                &__tel,
+                &__email {
+                    width: 100%;
+                    &--image {
+                        margin: 2.2rem auto 1.3rem;
+                    }
+                    &--info {
+                        &-text {
+                            height: 100%;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        font-size: 1.8rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        top: 3rem;
+                        width: 13rem;
+                    }
+                    &--text {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.3rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        font-size:  1.8rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        top: 3rem;
+                        width: 6.4rem;
+                    } 
+                    &--list {
+                        &-item {
+                            font-size:1.3rem;
+                        }
+                    }
+                }
+                &__link {
+                    &--heading {
+                        font-size:  1.8rem;
+                        margin-bottom: 3.5rem;
+                    }
+                    &--heading::after {
+                        top: 3rem;
+                    } 
+                }
+                &__image {
+                    margin-top: 5.5rem;
+                }
+                &__inside {
+                    &--left {
+                        font-size: 1.5rem;
+                    }
+                    &--right {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//PC low
+@include responsive_pclow { 
+    .footer {
+        &-outside {
+            width:100%;
+            height: 75.5rem;
+            &-logo {
+                margin: 0 auto 5rem; 
+                padding-top: 5.4rem;
+            }
+            &-top {
+                padding-top: 2.2rem;
+                padding-bottom: 2.2rem;
+                &__location,
+                &__tel,
+                &__email {
+                    width: 100%;
+                    &--image {
+                        margin: 2.2rem auto 1.3rem;
+                    }
+                    &--info {
+                        &-text {
+                            height: 100%;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            &-bottom {
+                &__info {
+                    &--heading {
+                        margin-bottom: 4.5rem;
+                    }
+                    &--text {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+                &__contact {
+                    &--heading {
+                        margin-bottom: 4.5rem;
+                    } 
+                    &--list {
+                        &-item {
+                            font-size:1.5rem;
+                        }
+                    }
+                }
+                &__link {
+                    &--heading {
+                        margin-bottom: 4.5rem;
+                    } 
+                }
+                &__image {
+                    margin-top: 5.5rem;
+                }
+                &__inside {
+                    &--left {
+                        font-size: 1.5rem;
+                    }
+                    &--right {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//PC medium
+@include responsive_pcmedium {
+    .footer {
+        &-outside {
+            width:100%;
+            height: 75.5rem;
+        }
+    }
+}

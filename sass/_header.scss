@@ -1,4 +1,9 @@
 @import 'variables';
+.mobile-logo,
+.navbar-mobile,
+.mobile-menu-overlay {
+	display: none;
+}
 .header {
     border-bottom: 0.3rem solid $color-main;
 	position: fixed;
@@ -34,6 +39,11 @@
                 }
             }
         }
+		&-language {
+			&__control {
+				font-size: 1.6rem;
+			}
+		}
     }
 }
 .home-sidebar {
@@ -82,6 +92,7 @@
 			background-color: $Bgcolor-nextprev;
 			border-radius: 50%;
 			cursor: pointer;
+			z-index: 1;
 			&--image {
 				width: 1.4rem;
 				height: 2.4rem;

@@ -1,5 +1,41 @@
-
 $(document).ready(function(){
+  $('.home-sidebar-image').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: false,
+    nextArrow: '<div class="home-sidebar-control__prev"><button class="home-sidebar-control__prev--image"><img src="./images/prev.png" alt=""></button></div>',
+    prevArrow: '<div class="home-sidebar-control__next"><button class="home-sidebar-control__next--image"><img src="./images/next.png" alt=""></button></div>',
+  });
+
+  $('.mobile-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3500,
+    dots: true,
+    nextArrow: false,
+    prevArrow: false,
+  });
+  $('.mobile-slider-top').slick({
+    autoplay: true,
+    autoplaySpeed: 3500,
+    dots: false,
+    nextArrow: false,
+    prevArrow: false,
+  });
+  $('.mobile-slider-between').slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: false,
+    nextArrow: false,
+    prevArrow: false,
+  });
+  $('.mobile-slider-bottom').slick({
+    autoplay: true,
+    autoplaySpeed: 2500,
+    dots: false,
+    nextArrow: false,
+    prevArrow: false,
+  });
+
   $('.home-store-list a').click(function() {
 
     $('.home-store-list .home-store-list__item ').removeClass('active');
@@ -7,7 +43,7 @@ $(document).ready(function(){
 
     // Display active tab
     let currentTab = $(this).attr('href');
-    $('.tabs-content div').hide();
+    $('.tabs-content > div').hide();
     $(currentTab).show();
 
     return false;
@@ -26,7 +62,7 @@ $(document).ready(function(){
     return false;
   });
 
-  $('.home-projects-top').slick({
+  $('.pc-slider-top').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       dots: false,
@@ -38,7 +74,7 @@ $(document).ready(function(){
       prevArrow: false,
   });
 
-  $('.home-projects-between').slick({
+  $('.pc-slider-between').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       dots: false,
@@ -50,7 +86,7 @@ $(document).ready(function(){
       prevArrow: false,
   });
 
-  $('.home-projects-bottom').slick({
+  $('.pc-slider-bottom').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       dots: false,
@@ -62,7 +98,7 @@ $(document).ready(function(){
       prevArrow: false,
   });
 
-  $('.consulting-team-outside__list').slick({
+  $('.pc-slider-team').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
@@ -102,6 +138,30 @@ $(document).ready(function(){
       behavior: "smooth",
     })
   })
+
+  $('.js-moblie-navbar').click(function() { 
+    $('.js-mobile-menu').toggleClass('show'); 
+    $('.mobile-menu-overlay').toggleClass('show');  
+    if($('.js-mobile-menu').hasClass('show') === true) {
+      $('.navbar-mobile').css("color", "#000")
+    } else { 
+      $('.navbar-mobile').css("color", "#fff")
+    }
+  })
+  $(".mobile-menu-overlay").click(function() {
+    $('.js-mobile-menu').addClass('show'); 
+    $('.mobile-menu-overlay').toggleClass('show');
+    if($('.js-mobile-menu').hasClass('show') === true) {
+      $('.navbar-mobile').css("color", "#000")
+    } else { 
+      $('.navbar-mobile').css("color", "#fff")
+    } 
+  });
+
+  $('.wrapper-mobile-main__button').click(function () { 
+    this.children.item(0).classList.toggle('fa-times');
+    this.classList.toggle('open');
+  });
 })
 
   
