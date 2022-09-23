@@ -15,9 +15,20 @@
 @import 'responsiveHeader';
 @import 'responsiveFooter';
 @import 'responsiveHome';
+@import 'responsiveAboutus';
+@import 'responsiveContact';
+@import 'responsiveService';
+@import 'responsiveWebstore';
 
 .wrapper-mobile-main {
     display: none;
+}
+.mobile-slider {
+    display: none;
+}
+
+.slick-track {
+    display: flex;
 }
 
 .price-list {
@@ -622,6 +633,9 @@
 }
 //Mobile
 @include responsive_mobile {
+    .pc-slider {
+        display: none;
+    }
     .slick-dots {
         display: flex !important;
         justify-content: center;
@@ -646,6 +660,24 @@
                 background-color: $black;
             }
     }
+    .mobile-slider {
+        display: block;
+    }
+    .general-slider {
+        margin-top: 7.2rem;
+        margin-bottom: 6.4rem;
+        &-image {
+            height: 25rem;
+            img {
+                height: 100%;
+            }
+        }
+        &-heading {
+            top: 35%;
+            left: 50%;
+            font-size: 2.5rem;
+        }
+    }
     .price-list {
         .slick-dots {
             top: 0;
@@ -653,7 +685,7 @@
         height: 86.6rem;
         &-heading {
             font-size: 2.8rem;
-            width: 70%;
+            width: 84%;
             margin: 5.7rem auto 0;
             span {
                 display: block;
@@ -802,11 +834,27 @@
                 width: 96%;
                 margin: 0 auto 8rem;
                 &--item {
-                    width: 45.5%;
+                    width: 44.5%;
                     margin: 0 1rem 2.5rem;
                     padding: 0;
                 }
             }
+        }
+    }
+    .content-pagination {
+        margin-top: 1rem;
+        &-item {
+            margin: 0 1.2rem;
+            width: 2.5rem;
+            height: 2.6rem;
+            &__link {
+                font-size: 1.6rem;
+            }
+        }
+        &-prev,
+        &-next {
+            font-size: 1.6rem;
+            margin-bottom: 0.4rem;
         }
     }
     .recruit-btn {
@@ -1020,6 +1068,14 @@
 }
 //Mobile Low
 @include responsive_mobilelow {
+    .general-slider {
+        &-image {
+            height: 18rem;
+        }
+        &-heading {
+            font-size: 2.5rem;
+        }
+    }
     .price-list {
         .slick-dots {
             top: 0;
@@ -1027,7 +1083,7 @@
         height: 86.6rem;
         &-heading {
             font-size: 2.6rem;
-            width: 74%;
+            width: 84%;
         }
         &-text {
             width: 77%;
@@ -1090,9 +1146,35 @@
             }
         }
     }
+    .content-pagination {
+        margin-top: 1rem;
+        &-item {
+            margin: 0 0.8rem;
+            width: 2.5rem;
+            height: 2.6rem;
+            &__link {
+                font-size: 1.5rem;
+            }
+        }
+        &-prev,
+        &-next {
+            font-size: 1.5rem;
+            margin-bottom: 0.4rem;
+        }
+    }
 }
 //Tablet
 @include responsive_tablet {
+    .general-slider {
+        &-image {
+            margin-top: 7.4rem;
+            height: 21rem;
+        }
+        &-heading {
+            top: 34%;
+            font-size: 4rem;
+        }
+    }
     .price-list {
         height: 150rem;
         &-heading {
@@ -1191,6 +1273,21 @@
             }
         }
     }
+    .content-pagination {
+        margin-top: 3rem;
+        &-item {
+            width: 3.5rem;
+            height: 3.6rem;
+            line-height: 3.2rem;
+            &__link {
+                font-size: 2.5rem;
+            }
+        }
+        &-prev,
+        &-next {
+            font-size: 2.5rem;
+        }
+    }
     .recruit-btn {
         right: 2.5rem;
         bottom: 14.8rem;
@@ -1213,6 +1310,11 @@
 }
 //PC low
 @include responsive_pclow {
+    .general-slider {
+        &-heading {
+            top: 34%;
+        }
+    }
     .price-list {
         height: 86.6rem;
         &-heading {
