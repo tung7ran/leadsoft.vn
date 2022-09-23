@@ -65,32 +65,33 @@
             font-size: 1.8rem;
             line-height: 2.5rem;
             color: $black;
+            text-align: justify;
         }
     }
     &-right{
         padding-top: 12rem;
         &__outside{
-        width: 39.5rem;
-        height: 9rem;
-        margin: 0 0 8rem 12rem;
-        &--image {
-            width: 9.8rem;
+            width: 39.5rem;
             height: 9rem;
-            float: left;
-        }
-        &--text{
-            float: left;
-            margin: 1.5rem 0 0 3rem;
-            &-number{
-                color: $color-main;
-                font-size: 2.4rem;
-                padding-bottom: 1rem;
+            margin: 0 0 8rem 12rem;
+            &--image {
+                width: 9.8rem;
+                height: 9rem;
+                float: left;
             }
-            span{
-                font-size: 2.4rem;
-                color: $black;
+            &--text{
+                float: left;
+                margin: 1.5rem 0 0 3rem;
+                &-number{
+                    color: $color-main;
+                    font-size: 2.4rem;
+                    padding-bottom: 1rem;
+                }
+                span{
+                    font-size: 2.4rem;
+                    color: $black;
+                }
             }
-        }
         }
     }
     &-outside{
@@ -124,6 +125,7 @@
             font-size: 1.8rem;
             line-height: 2.5rem;
             color: $black;
+            text-align: justify;
         }
     }
 }

@@ -4,6 +4,9 @@
     top: 26% !important;
 }
 .content-service{
+    .mobile-service {
+        display: none;
+    }
     .mt-9 {
         margin-top: 9rem;
     }
@@ -31,12 +34,12 @@
             }
             &--btn{       
                 background: $color-main;
-                border-radius: 10px;
-                width: 189px;
-                height: 32px;
+                border-radius: 1rem;
+                width: 18.9rem;
+                height: 3.2rem;
                 &-link{
-                    font-size: 18px;
-                    line-height: 25px;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
                     color: $white;
                     display: block;
                     text-align: center;

@@ -10,6 +10,7 @@ $(document).ready(function(){
   $('.mobile-slider').slick({
     autoplay: true,
     autoplaySpeed: 3500,
+    slidesToShow: 1,
     dots: true,
     nextArrow: false,
     prevArrow: false,
@@ -56,7 +57,7 @@ $(document).ready(function(){
 
     // Display active tab
     let currentTab = $(this).attr('href');
-    $('.tabs-content div').hide();
+    $('.tabs-content > div').hide();
     $(currentTab).show();
 
     return false;
