@@ -19,14 +19,17 @@
         <header class="header">
             <div class="container">
                 <div class="header-outside row">
-                    <div class="header-outside-logo col-xl-3">
+                    <div class="header-outside-logo col-xl-2 col-lg-2 col-md-2 col-10">
                         <div class="header-outside-logo__image">
                             <a href="./index.html">
                                 <img src="./images/logo/logo.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="header-outside-nav col-xl-9">
+                    <div class="header-outside-nav col-xl-9 col-lg-9 col-md-9 js-mobile-menu">
+                        <div class="mobile-logo">
+                            <img src="./images/logo/logo.png" alt="">
+                        </div>
                         <ul class="header-outside-nav__list">
                             <li class="header-outside-nav__list--item">
                                 <a href="./index.html" class="header-outside-nav__list--item-link">
@@ -44,7 +47,7 @@
                                 </a>
                             </li>
                             <li class="header-outside-nav__list--item">
-                                <a href="#" class="header-outside-nav__list--item-link header-active">
+                                <a href="#" class="header-outside-nav__list--item-link">
                                     Dịch vụ
                                 </a>
                             </li>
@@ -65,6 +68,19 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="header-outside-language col-xl-1 col-lg-1 col-md-1">
+                        <select name="sample" id="language" class="header-outside-language__control">
+                            <option value="En">
+                                
+                            </option>
+                            <option value="">Vietnamses</option>
+                            <option value="fa fa-address-card" class="fa"></option>
+                        </select>
+                    </div>
+                    <button class="navbar-mobile js-moblie-navbar col-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="mobile-menu-overlay"></div>
                 </div>
             </div>
         </header>
@@ -77,12 +93,12 @@
         <!-- Container -->
         <div class="content-service">
             <div class="container">
-                <div class="content-service-outside">
+                <div class="content-service-outside pc-service">
                     <div class="row wow mt-9 bounceInRight" id="tu-van-he-thong-tong-the">
-                        <div class="content-service-outside__image col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
                             <img alt="" src="./images/teamwork-02.jpg">
                         </div>
-                        <div class="content-service-outside__info col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
                             <h2 class="content-service-outside__info--heading">TƯ VẤN HỆ THỐNG TỔNG THỂ</h2>
                             <p class="content-service-outside__info--text">Chúng tôi tin rằng mọi hệ thống thông tin doanh nghiệp đều cần được thiết kế, xây dựng và triển khai với một định hướng phát triển cùng lộ trình đầu tư đồng bộ, xuyên suốt nhằm luôn đảm bảo hiệu quả của từng giai đoạn.</p><br>
                             <ul class="content-service-outside__info--list">
@@ -101,7 +117,7 @@
                         </div>
                     </div>
                     <div class="row wow mt-9 bounceInLeft" id="trien-khai-he-thong-erp">
-                        <div class="content-service-outside__info col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
                             <h2 class="content-service-outside__info--heading">TRIỂN KHAI HỆ THỐNG ERP</h2>
                             <p class="content-service-outside__info--text">
                                 Một nền tảng duy nhất cho mọi nghiệp vụ kinh doanh của Doanh nghiệp.
@@ -117,15 +133,15 @@
                                 <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
                         </div>
-                        <div class="content-service-outside__image col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
                             <img alt="" src="./images/intro-01.png">
                         </div>
                     </div>
                     <div class="row wow mt-9 bounceInRight" id="thiet-ke-website">
-                        <div class="content-service-outside__image col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
                             <img alt="" src="./images/banner-04.jpg">
                         </div>
-                        <div class="content-service-outside__info content col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__info content col-12 col-md-6 col-lg-6 col-xl-6">
                             <h2 class="content-service-outside__info--heading">THIẾT KẾ WEBSITE / PORTAL</h2>
                             <p class="content-service-outside__info--text">
                                 Nền tảng công nghệ cho phép xây dựng hệ thống Website/Portal đáp ứng mọi nhu cầu, quy mô của tổ chức / doanh nghiệp.<br>
@@ -143,7 +159,7 @@
                         </div>
                     </div>
                     <div class="row wow mt-9 bounceInLeft" id="thuong-mai-dien-tu">
-                        <div class="content-service-outside__info col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
                             <h2 class="content-service-outside__info--heading">XÂY DỰNG TRANG THƯƠNG MẠI ĐIỆN TỬ</h2>
                             <p class="content-service-outside__info--text">Công cụ hiệu quả quảng bá sản phẩm, dịch vụ và bán hàng trực tuyến trên Internet giúp mở rộng thị trường, tăng doanh thu cho doanh nghiệp.</p><br>
                             <ul class="content-service-outside__info--list">
@@ -155,15 +171,15 @@
                                 <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
                         </div>
-                        <div class="content-service-outside__image col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
                             <img alt="" src="./images/thuong_mai_dien_tu.jpg">
                         </div>
                     </div>
                     <div class="row wow mt-9 bounceInRight" id="phat-trien-ung-dung-chuyen-nganh">
-                        <div class="content-service-outside__image col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
                             <img alt="" src="./images/app-development-02.jpg">
                         </div>
-                        <div class="content-service-outside__info col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
                             <h2 class="content-service-outside__info--heading">PHÁT TRIỂN ỨNG DỤNG CHUYÊN NGÀNH</h2>
                             <p class="content-service-outside__info--text">Tin học hóa quy trình nghiệp vụ đặc thù. Phát triển trên một nền tảng công nghệ thống nhất. Sẵn sàng cho các nhu cầu phát triển tổng thể và lâu dài.</p><br>
                             <div class="content-service-outside__info--btn">
@@ -172,218 +188,513 @@
                         </div>
                     </div>
                     <div class="row wow mt-9 bounceInLeft" id="dau-tu-du-an">
-                        <div class="content-service-outside__info col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
                             <h2 class="content-service-outside__info--heading">ĐẦU TƯ DỰ ÁN</h2>
                             <p class="content-service-outside__info--text">
                                 Với đội ngũ chuyên gia và kỹ sư CNTT nhiều kinh nghiệm, chúng tôi hỗ trợ và cùng hợp tác xây dựng giải pháp đáp ứng tốt nhất các nhu cầu đa dạng trong thực tế.<br>
                                 Đối tượng hợp tác là mọi tổ chức và doanh nghiệp, trên tinh thần các bên cùng có lợi và đảm bảo hiệu quả tốt nhất cho mọi chương trình hợp tác.
                             </p><br>
                             <div class="content-service-outside__info--btn">
-                                <a class="content-service-outside__info--btn-link" href="/lien-he">Liên hệ</a>
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
                         </div>
-                        <div class="content-service-outside__image col-12 col-sm-12 col-md-6">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
                             <img alt="" src="./images/teamwork-01.jpg">
                         </div>
                     </div>
                 </div>
-                <div class="price-list">
-                    <div class="container"> 
-                        <div class="price-list-heading">BẢNG GIÁ TRỌN GÓI <span>- UY TÍN HÀNG ĐẦU</span></div>
-                        <p class="price-list-text">Công nghệ web hàng đầu – Tiết kiệm Chi Phí – Bàn giao web nhanh chóng</p>
-                        <div class="price-list-outside row">
-                            <div class="col-xl-3">
-                                <div class="price-list-outside__inside">
-                                    <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
-                                    <div class="price-list-outside__inside--type">
-                                        <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
-                                    </div>
-                                    <ul class="price-list-outside__inside--list">
-                                        <li class="price-list-outside__inside--list-item">
-                                            1 Mẫu giao diện trong kho cơ bản
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hướng dẫn & tặng sách quản trị web
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hỗ trợ đổi sắc màu
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng hosting 1000mb băng thông Không Giới Hạn
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng domain .com trị giá 300k
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Bảo hành trọn đời
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                    </ul>
-                                    <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
-                                </div>
+                <div class="content-service-outside mobile-service">
+                    <div class="row wow mt-9 bounceInRight" id="tu-van-he-thong-tong-the">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
+                            <img alt="" src="./images/teamwork-02.jpg">
+                        </div>
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="content-service-outside__info--heading">TƯ VẤN HỆ THỐNG TỔNG THỂ</h2>
+                            <p class="content-service-outside__info--text">Chúng tôi tin rằng mọi hệ thống thông tin doanh nghiệp đều cần được thiết kế, xây dựng và triển khai với một định hướng phát triển cùng lộ trình đầu tư đồng bộ, xuyên suốt nhằm luôn đảm bảo hiệu quả của từng giai đoạn.</p><br>
+                            <ul class="content-service-outside__info--list">
+                                <li class="content-service-outside__info--list-item">Bước 1: Phân tích, đánh giá nhu cầu</li>
+                                <li class="content-service-outside__info--list-item">Bước 2: Lựa chọn công nghệ và giải pháp</li>
+                                <li class="content-service-outside__info--list-item">Bước 3: Lập kế hoạch thực hiện</li>
+                                <li class="content-service-outside__info--list-item">Bước 4: Thiết kế hệ thống tổng thể</li>
+                                <li class="content-service-outside__info--list-item">Bước 5: Xây dựng</li>
+                                <li class="content-service-outside__info--list-item">Bước 6: Triển khai hệ thống</li>
+                                <li class="content-service-outside__info--list-item">Bước 7: Hỗ trợ vận hành</li>
+                            </ul>
+                            <br>
+                            <div class="content-service-outside__info--btn">
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
-                            <div class="col-xl-3">
-                                <div class="price-list-outside__inside">
-                                    <div class="price-list-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
-                                    <div class="price-list-outside__inside--type home-background-seo">
-                                        <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
-                                    </div>
-                                    <ul class="price-list-outside__inside--list">
-                                        <li class="price-list-outside__inside--list-item">
-                                            1 Mẫu giao diện trong kho cơ bản
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hướng dẫn & tặng sách quản trị web
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hỗ trợ đổi sắc màu
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng hosting 1000mb băng thông Không Giới Hạn
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng domain .com trị giá 300k
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Bảo hành trọn đời
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                    </ul>
-                                    <button class="e4_177 price-list-outside__inside--btn home-background-seo">Đăng ký</button>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row wow mt-9 bounceInLeft" id="trien-khai-he-thong-erp">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
+                            <img alt="" src="./images/intro-01.png">
+                        </div>
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="content-service-outside__info--heading">TRIỂN KHAI HỆ THỐNG ERP</h2>
+                            <p class="content-service-outside__info--text">
+                                Một nền tảng duy nhất cho mọi nghiệp vụ kinh doanh của Doanh nghiệp.
+                                Tùy biến và triển khai toàn bộ hay từng phần theo lộ trình các phân hệ ERP tiêu chuẩn của doanh nghiệp.
+                            </p><br>
+                            <ul class="content-service-outside__info--list">
+                                <li class="content-service-outside__info--list-item">Giao diện web</li>
+                                <li class="content-service-outside__info--list-item">Công nghệ hiện đại</li>
+                                <li class="content-service-outside__info--list-item">Điện toán đám mây</li>
+                                <li class="content-service-outside__info--list-item">Kiến trúc mở</li>
+                            </ul><br>
+                            <div class="content-service-outside__info--btn">
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
-                            <div class="col-xl-3">
-                                <div class="price-list-outside__inside">
-                                    <div class="price-list-outside__inside--title home-color-support">
-                                        <div class="price-list-image">
-                                            <img src="./images/bgColor.png" alt="">
-                                        </div>
-                                        4.800.000 <br> <span>GÓI WEB HỖ TRỢ <br> BÁN HÀNG</span>
-                                    </div>
-                                    <div class="price-list-outside__inside--type home-background-support">
-                                        <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
-                                    </div>
-                                    <ul class="price-list-outside__inside--list">
-                                        <li class="price-list-outside__inside--list-item">
-                                            1 Mẫu giao diện trong kho cơ bản
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hướng dẫn & tặng sách quản trị web
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hỗ trợ đổi sắc màu
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng hosting 1000mb băng thông Không Giới Hạn
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng domain .com trị giá 300k
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Bảo hành trọn đời
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                    </ul>
-                                    <button class="e4_177 price-list-outside__inside--btn home-background-support">Đăng ký</button>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row wow mt-9 bounceInRight" id="thiet-ke-website">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
+                            <img alt="" src="./images/banner-04.jpg">
+                        </div>
+                        <div class="content-service-outside__info content col-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="content-service-outside__info--heading">THIẾT KẾ WEBSITE / PORTAL</h2>
+                            <p class="content-service-outside__info--text">
+                                Nền tảng công nghệ cho phép xây dựng hệ thống Website/Portal đáp ứng mọi nhu cầu, quy mô của tổ chức / doanh nghiệp.<br>
+                                Với hệ thống CMS linh hoạt phục vụ quảng bá doanh nghiệp hiệu quả trên Internet.
+                            </p><br>
+                            <ul class="content-service-outside__info--list">
+                                <li class="content-service-outside__info--list-item">Website doanh nghiệp vừa và nhỏ</li>
+                                <li class="content-service-outside__info--list-item">Cổng thông tin điện tử với nhiều website con dành cho các tập đoàn, các Tỉnh thành, Bộ...</li>
+                                <li class="content-service-outside__info--list-item">Cổng thông tin dịch vụ khách hàng kết nối hệ thống ERP</li>
+                                <li class="content-service-outside__info--list-item">Báo, tạp chí điện tử</li>
+                            </ul><br>
+                            <div class="content-service-outside__info--btn">
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
-                            <div class="col-xl-3">
-                                <div class="price-list-outside__inside">
-                                    <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
-                                    <div class="price-list-outside__inside--type">
-                                        <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
-                                    </div>
-                                    <ul class="price-list-outside__inside--list">
-                                        <li class="price-list-outside__inside--list-item">
-                                            1 Mẫu giao diện trong kho cơ bản
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hướng dẫn & tặng sách quản trị web
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Hỗ trợ đổi sắc màu
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng hosting 1000mb băng thông Không Giới Hạn
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Tặng domain .com trị giá 300k
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Bảo hành trọn đời
-                                        </li>
-                                        <li class="price-list-outside__inside--list-item">
-                                            Thời gian hoàn thiện 1 ngày
-                                        </li>
-                                    </ul>
-                                    <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="row wow mt-9 bounceInLeft" id="thuong-mai-dien-tu">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
+                            <img alt="" src="./images/thuong_mai_dien_tu.jpg">
+                        </div>
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="content-service-outside__info--heading">XÂY DỰNG TRANG THƯƠNG MẠI ĐIỆN TỬ</h2>
+                            <p class="content-service-outside__info--text">Công cụ hiệu quả quảng bá sản phẩm, dịch vụ và bán hàng trực tuyến trên Internet giúp mở rộng thị trường, tăng doanh thu cho doanh nghiệp.</p><br>
+                            <ul class="content-service-outside__info--list">
+                                <li class="content-service-outside__info--list-item">Công cụ quảng bá sản phẩm và bán hàng trực tuyến</li>
+                                <li class="content-service-outside__info--list-item">Tích hợp thanh toán trực tuyến và dịch vụ vận chuyển</li>
+                                <li class="content-service-outside__info--list-item">Tích hợp dữ liệu tổng thể hệ thống thông tin quản trị doanh nghiệp</li>
+                            </ul><br>
+                            <div class="content-service-outside__info--btn">
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wow mt-9 bounceInRight" id="phat-trien-ung-dung-chuyen-nganh">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
+                            <img alt="" src="./images/app-development-02.jpg">
+                        </div>
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="content-service-outside__info--heading">PHÁT TRIỂN ỨNG DỤNG CHUYÊN NGÀNH</h2>
+                            <p class="content-service-outside__info--text">Tin học hóa quy trình nghiệp vụ đặc thù. Phát triển trên một nền tảng công nghệ thống nhất. Sẵn sàng cho các nhu cầu phát triển tổng thể và lâu dài.</p><br>
+                            <div class="content-service-outside__info--btn">
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row wow mt-9 bounceInLeft" id="dau-tu-du-an">
+                        <div class="content-service-outside__image col-12 col-md-6 col-lg-6 col-xl-6">
+                            <img alt="" src="./images/teamwork-01.jpg">
+                        </div>
+                        <div class="content-service-outside__info col-12 col-md-6 col-lg-6 col-xl-6">
+                            <h2 class="content-service-outside__info--heading">ĐẦU TƯ DỰ ÁN</h2>
+                            <p class="content-service-outside__info--text">
+                                Với đội ngũ chuyên gia và kỹ sư CNTT nhiều kinh nghiệm, chúng tôi hỗ trợ và cùng hợp tác xây dựng giải pháp đáp ứng tốt nhất các nhu cầu đa dạng trong thực tế.<br>
+                                Đối tượng hợp tác là mọi tổ chức và doanh nghiệp, trên tinh thần các bên cùng có lợi và đảm bảo hiệu quả tốt nhất cho mọi chương trình hợp tác.
+                            </p><br>
+                            <div class="content-service-outside__info--btn">
+                                <a class="content-service-outside__info--btn-link" href="/lien-he">Yêu cầu tư vấn</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="consulting-team">
+            <section class="price-list">
+                <div class="container"> 
+                    <div class="price-list-heading">BẢNG GIÁ TRỌN GÓI <span>UY TÍN HÀNG ĐẦU</span></div>
+                    <p class="price-list-text">Công nghệ web hàng đầu – Tiết kiệm Chi Phí – Bàn giao web nhanh chóng</p>
+                    <div class="price-list-outside row pc-slider">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
+                                <div class="price-list-outside__inside--type home-background-seo">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-seo">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-support">
+                                    <div class="price-list-image">
+                                        <img src="./images/bgColor.png" alt="">
+                                    </div>
+                                    4.800.000 <br> <span>GÓI WEB HỖ TRỢ <br> BÁN HÀNG</span>
+                                </div>
+                                <div class="price-list-outside__inside--type home-background-support">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-support">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price-list-outside row mobile-slider">
+                        <div class="col-xl-3 col-12">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-12">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
+                                <div class="price-list-outside__inside--type home-background-seo">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-seo">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-12">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title home-color-support">
+                                    <div class="price-list-image">
+                                        <img src="./images/bgColor.png" alt="">
+                                    </div>
+                                    4.800.000 <br> <span>GÓI WEB HỖ TRỢ BÁN HÀNG</span>
+                                </div>
+                                <div class="price-list-outside__inside--type home-background-support">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn home-background-support">Đăng ký</button>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-12">
+                            <div class="price-list-outside__inside">
+                                <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
+                                <div class="price-list-outside__inside--type">
+                                    <span class="price-list-outside__inside--type-text">TRỌN GÓI</span>
+                                </div>
+                                <ul class="price-list-outside__inside--list">
+                                    <li class="price-list-outside__inside--list-item">
+                                        1 Mẫu giao diện trong kho cơ bản
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hướng dẫn & tặng sách quản trị web
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Hỗ trợ đổi sắc màu
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng hosting 1000mb băng thông Không Giới Hạn
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Tặng domain .com trị giá 300k
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Bảo hành trọn đời
+                                    </li>
+                                    <li class="price-list-outside__inside--list-item">
+                                        Thời gian hoàn thiện 1 ngày
+                                    </li>
+                                </ul>
+                                <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="consulting-team">
                 <div class="container">
                     <div class="consulting-team-heading">CHUYÊN VIÊN TƯ VẤN</div>
                     <p class="consulting-team-text">Kinh nghiệm, năng lực và thương hiệu của chúng tôi đã được khẳng định trên thị trường</p>
                     <div class="consulting-team-outside">
-                        <ul class="consulting-team-outside__list row">
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                        <ul class="consulting-team-outside__list row pc-slider-team">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                        </ul>
+                        <ul class="consulting-team-outside__list row mobile-team">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-6">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2 col-6">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2 col-6">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2 col-6">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2 col-6">
+                                <img src="./images/imagePeople1.png" alt="">
+                                <div class="consulting-team-border"></div>
+                                <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
+                                <span>LH: 0364 05 80 80</span>
+                            </li>
+                            <li class="consulting-team-outside__list--item col-xl-2 col-6">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
@@ -392,7 +703,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
         <!-- Footer -->
         <footer class="footer">
@@ -403,7 +714,7 @@
                 <div class="footer-outside-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__location">
                                     <div class="footer-outside-top__location--image">
                                         <img src="./images/Imglocation.png" alt="">
@@ -413,7 +724,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__tel">
                                     <div class="footer-outside-top__tel--image">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="42.04" height="39" fill="#00" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -425,7 +736,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__email">
                                     <div class="footer-outside-top__email--image">
                                         <i class="fa-regular fa-envelope"></i>
@@ -441,7 +752,7 @@
                 <div class="footer-outside-bottom">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__info">
                                     <h3 class="footer-outside-bottom__info--heading">VỀ CHÚNG TÔI</h3>
                                   <p class="footer-outside-bottom__info--text">Lorem ipsum dolor sit amet, 
@@ -450,7 +761,7 @@
                                   </p>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__contact">
                                     <h3 class="footer-outside-bottom__contact--heading">LIÊN HỆ</h3>
                                     <ul class="footer-outside-bottom__contact--list">
@@ -469,7 +780,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__link">
                                     <h3 class="footer-outside-bottom__link--heading">LIÊN KẾT MẠNG XÃ HỘI</h3>
                                     <ul class="footer-outside-bottom__link--social">
@@ -575,6 +886,18 @@
         <button id="myBtn" title="Go to top">
             <img src="./images/arrowTop.png" alt="">
         </button>
+        <!-- action contact button mobile -->
+        <div class="wrapper-mobile">
+            <div class="wrapper-mobile-main">
+              <div class="wrapper-mobile-main__button" class="wave open">
+                <i class="fas fa-comments"></i>
+              </div>
+              <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="messenger-color"><i class="fab fa-facebook-messenger"></i></a>
+              <a href="./recruitment.html" class="recruit-color"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

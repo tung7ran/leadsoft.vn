@@ -1,0 +1,60 @@
+@import 'variables';
+//Mobile
+@include responsive_mobile {
+    .content-service{
+        .pc-service {
+            display: none;
+        }
+        .mobile-service {
+            display: block;
+        }
+        .mt-9 {
+            margin-top: 5rem;
+        }
+        &-outside {
+            margin-top: 9.5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            &__info {
+                &--heading {
+                    margin-top: 2.8rem;
+                    margin-bottom: 1.6rem;
+                }
+                &--btn{       
+                    width: 18.9rem;
+                    height: 3.2rem;
+                    margin: 1.4rem auto 0;
+                    &-link{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    
+    } 
+}
+//Mobile Low
+@include responsive_mobilelow {
+    .service-heading {
+        top: 23% !important;
+        font-size: 2rem !important;
+    }
+}
+//Tablet
+@include responsive_tablet {
+    .service-heading {
+        top: 23% !important;
+        font-size: 3rem !important;
+    }
+}
+//PC low
+@include responsive_pclow {
+    .service-heading {
+        top: 23% !important;
+        font-size: 4rem !important;
+    }
+}
+//PC medium
+@include responsive_pcmedium { 
+    
+}

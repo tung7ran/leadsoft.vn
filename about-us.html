@@ -18,14 +18,17 @@
         <header class="header">
             <div class="container">
                 <div class="header-outside row">
-                    <div class="header-outside-logo col-xl-3">
+                    <div class="header-outside-logo col-xl-2 col-lg-2 col-md-2 col-10">
                         <div class="header-outside-logo__image">
                             <a href="./index.html">
                                 <img src="./images/logo/logo.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="header-outside-nav col-xl-9">
+                    <div class="header-outside-nav col-xl-9 col-lg-9 col-md-9 js-mobile-menu">
+                        <div class="mobile-logo">
+                            <img src="./images/logo/logo.png" alt="">
+                        </div>
                         <ul class="header-outside-nav__list">
                             <li class="header-outside-nav__list--item">
                                 <a href="./index.html" class="header-outside-nav__list--item-link">
@@ -33,7 +36,7 @@
                                 </a>
                             </li>
                             <li class="header-outside-nav__list--item">
-                                <a href="#" class="header-outside-nav__list--item-link header-active">
+                                <a href="./about-us.html" class="header-outside-nav__list--item-link">
                                     Giới Thiệu
                                 </a>
                             </li>
@@ -64,6 +67,19 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="header-outside-language col-xl-1 col-lg-1 col-md-1">
+                        <select name="sample" id="language" class="header-outside-language__control">
+                            <option value="En">
+                                
+                            </option>
+                            <option value="">Vietnamses</option>
+                            <option value="fa fa-address-card" class="fa"></option>
+                        </select>
+                    </div>
+                    <button class="navbar-mobile js-moblie-navbar col-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="mobile-menu-overlay"></div>
                 </div>
             </div>
         </header>
@@ -79,7 +95,7 @@
                     <span class="content-about-title__text">Không ngừng vươn lên</span>
                 </div>
                 <div class="row">
-                    <div class="content-about-left col-xl-6 col-md-6">  
+                    <div class="content-about-left col-xl-6 col-lg-6 col-md-6 col-12">  
                         <p class="content-about-left__info">LeadSoft là công ty thiết kế website cao cấp có tuổi đời 8+ năm trong ngành, hoạt động chính thức từ 2013 – trước đó là một nhóm Freelancer. Hiện LeadSoft là công ty chính trong hệ sinh thái công ty phần mềm Software, Host, SEO <br><br>
                             Mona Media hoạt động chính trong các mảng: <br><br>
                             Website cao cấp cho khách hàng, giao diện thiết kế độc quyền, chỉn chu, chuẩn về UX, tính năng code theo giải pháp đã tư vấn cho khách hàng. <br><br>
@@ -90,7 +106,7 @@
                             Nghiên cứu và ra đời các bộ phần mềm có sẵn để phục vụ trực tiếp vào nhu cầu của khách hàng Việt Nam như phần mềm nhập hàng Trung Quốc, phần mềm dạy học trực tuyến elearning, phần mềm quản lý tiệm nail, tóc, làm đẹp, Ngay từ những ngày đầu hoạt động, Mona Media đã chọn cho mình một phân khúc riêng, khác biệt với hàng ngàn công ty dịch vụ thiết kế website trên thị trường: phân khúc của sự hiệu quả.
                         </p>
                     </div>
-                    <div class="content-about-right col-xl-6 col-md-6">
+                    <div class="content-about-right col-xl-6 col-lg-6 col-md-6 col-12">
                         <div class="content-about-right__outside">
                             <div class="content-about-right__outside--image">
                                 <img src="./images/Stack.png" alt="">
@@ -640,7 +656,7 @@
                     <div class="price-list-heading">BẢNG GIÁ TRỌN GÓI <span>UY TÍN HÀNG ĐẦU</span></div>
                     <p class="price-list-text">Công nghệ web hàng đầu – Tiết kiệm Chi Phí – Bàn giao web nhanh chóng</p>
                     <div class="price-list-outside row pc-slider">
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="price-list-outside__inside">
                                 <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
                                 <div class="price-list-outside__inside--type">
@@ -675,7 +691,7 @@
                                 <button class="e4_177 price-list-outside__inside--btn">Đăng ký</button>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="price-list-outside__inside">
                                 <div class="price-list-outside__inside--title home-color-seo">3.499.000 <br> <span>GÓI WEB CHUẨN SEO</span></div>
                                 <div class="price-list-outside__inside--type home-background-seo">
@@ -710,7 +726,7 @@
                                 <button class="e4_177 price-list-outside__inside--btn home-background-seo">Đăng ký</button>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="price-list-outside__inside">
                                 <div class="price-list-outside__inside--title home-color-support">
                                     <div class="price-list-image">
@@ -750,7 +766,7 @@
                                 <button class="e4_177 price-list-outside__inside--btn home-background-support">Đăng ký</button>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="price-list-outside__inside">
                                 <div class="price-list-outside__inside--title">1.450.000 <br> <span>GÓI WEB CƠ BẢN</span></div>
                                 <div class="price-list-outside__inside--type">
@@ -941,43 +957,43 @@
                     <p class="consulting-team-text">Kinh nghiệm, năng lực và thương hiệu của chúng tôi đã được khẳng định trên thị trường</p>
                     <div class="consulting-team-outside">
                         <ul class="consulting-team-outside__list row pc-slider-team">
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
                                 <span>LH: 0364 05 80 80</span>
                             </li>
-                            <li class="consulting-team-outside__list--item col-xl-2">
+                            <li class="consulting-team-outside__list--item col-xl-2 col-md-2">
                                 <img src="./images/imagePeople1.png" alt="">
                                 <div class="consulting-team-border"></div>
                                 <h5 class="consulting-team-outside__list--item-heading">Hoàng Hiền</h5>
@@ -1035,7 +1051,7 @@
                 <div class="footer-outside-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__location">
                                     <div class="footer-outside-top__location--image">
                                         <img src="./images/Imglocation.png" alt="">
@@ -1045,7 +1061,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__tel">
                                     <div class="footer-outside-top__tel--image">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="42.04" height="39" fill="#00" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -1057,7 +1073,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__email">
                                     <div class="footer-outside-top__email--image">
                                         <i class="fa-regular fa-envelope"></i>
@@ -1073,7 +1089,7 @@
                 <div class="footer-outside-bottom">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__info">
                                     <h3 class="footer-outside-bottom__info--heading">VỀ CHÚNG TÔI</h3>
                                   <p class="footer-outside-bottom__info--text">Lorem ipsum dolor sit amet, 
@@ -1082,7 +1098,7 @@
                                   </p>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__contact">
                                     <h3 class="footer-outside-bottom__contact--heading">LIÊN HỆ</h3>
                                     <ul class="footer-outside-bottom__contact--list">
@@ -1101,7 +1117,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__link">
                                     <h3 class="footer-outside-bottom__link--heading">LIÊN KẾT MẠNG XÃ HỘI</h3>
                                     <ul class="footer-outside-bottom__link--social">
@@ -1207,6 +1223,18 @@
         <button id="myBtn" title="Go to top">
             <img src="./images/arrowTop.png" alt="">
         </button>
+        <!-- action contact button mobile -->
+        <div class="wrapper-mobile">
+            <div class="wrapper-mobile-main">
+              <div class="wrapper-mobile-main__button" class="wave open">
+                <i class="fas fa-comments"></i>
+              </div>
+              <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="messenger-color"><i class="fab fa-facebook-messenger"></i></a>
+              <a href="./recruitment.html" class="recruit-color"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 

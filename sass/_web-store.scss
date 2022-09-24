@@ -7,16 +7,6 @@
         text-align: center;
         padding-top: 10.3rem;
     }
-    &-heading::after {
-        content: "";
-        position: absolute;
-        top: 15rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 16.8rem;
-        height: 0.3rem;
-        background-color: $Bgcolor-after;
-    }
     &-text {
         text-align: center;
         font-size: 1.5rem;

@@ -1,0 +1,174 @@
+@import 'variables';
+//Mobile
+@include responsive_mobile { 
+    .banner{
+        height: 26.2rem;
+    }
+    .content-about{
+        &-title{
+            &__line{
+                width: 21rem;
+            }
+            &__heading{
+                font-size: 3rem;
+            }
+            &__text{
+                font-size: 1.8rem;
+            }
+        }
+        &-left{
+            &__info{
+                font-size: 1.5rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+        &-right{
+            padding-top: 10rem;
+            &__outside{
+                height: 11rem;
+                margin: 0 0 8rem 4.3rem;
+                border: 1px solid #fff;
+                background-image: linear-gradient($color-main,$color-main),linear-gradient($color-main,$color-main),;
+                background-repeat: no-repeat;
+                background-size: 0 0, 100% 1px, 0 0;
+                background-position: left bottom,left bottom;
+            }
+        }
+        &-outside{
+            width: 100%;
+            height: 100%;
+            &-title{
+                &__line{
+                    width: 12.8rem;
+                    left: 50.2%;
+                    top: 3.5rem;
+                }
+                &__heading{
+                    font-size: 3rem;
+                    padding-left: 0;
+                }
+            }
+            &__info{
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}
+//Mobile Low
+@include responsive_mobilelow { 
+    .content-about{
+        &-right{
+            padding-top: 10rem;
+            &__outside{
+                height: 11rem;
+                margin: 0 0 8rem 0;
+                background-size: 0 0, 91% 1px, 0 0;
+                &--image {
+                    width: 7.8rem;
+                    height: 8rem;
+                    margin-left: 1rem;
+                }
+                &--text{
+                    margin: 1.5rem 0 0 2rem;
+                    &-number{
+                        font-size: 2.4rem;
+                    }
+                    span{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//Tablet
+@include responsive_tablet { 
+    .content-about{
+        &-title{
+            &__line{
+                width: 21rem;
+            }
+            &__heading{
+                font-size: 3.4rem;
+            }
+            &__text{
+                font-size: 1.8rem;
+            }
+        }
+        &-left{
+            &__info{
+                font-size: 1.6rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+        &-right{
+            padding-top: 25rem;
+            &__outside{
+                height: 11rem;
+                margin: 0 0 2rem 0;
+                &--image {
+                    width: 8.8rem;
+                    margin-left: 1.2rem;
+                }
+                &--text {
+                    margin-left: 2rem;
+                    &-number {
+                        font-size: 2rem;
+                    }
+                    span {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        &-outside{
+            width: 100%;
+            height: 100%;
+            &-title{
+                &__line{
+                    width: 12.8rem;
+                    left: 50.2%;
+                    top: 3.5rem;
+                }
+                &__heading{
+                    font-size: 3.4rem;
+                    padding-left: 0;
+                }
+            }
+            &__info{
+                font-size: 1.6rem;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}
+//PC low
+@include responsive_pclow { 
+    .content-about{
+        &-right{
+            padding-top: 22rem;
+            &__outside{
+                height: 11rem;
+                margin: 0 0 2rem 8rem;
+                &--image {
+                    margin-left: 1.2rem;
+                }
+                &--text {
+                    margin-left: 2rem;
+                    &-number {
+                        font-size: 2.2rem;
+                    }
+                    span {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
