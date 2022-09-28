@@ -42,10 +42,15 @@
         &-heading {
             padding-top: 3.3rem;
         }
+        &-list {
+            &__item {
+                margin-right: 1.5rem;
+                margin-left: 1.5rem;
+            }
+        }
         &-outside {
             &__list {
                 .over-show {
-                    display: block;
                     left: 1.4rem;
                     right: 1.5rem;
                     &-title {
@@ -53,18 +58,18 @@
                         top: 60%;
                     }
                     &-text {
-                        font-size: 2.6rem;
+                        font-size: 2.4rem;
                         top: 62%;
                     }
                     &-btn {
                         top: 67%;
                         &__demo {
-                            font-size: 1.4rem;
-                            padding: 0.2rem 0.8rem;
+                            font-size: 1.8rem;
+                            padding: 0.8rem 0.8rem;
                         }
                         &__detail {
-                            font-size: 1.4rem;
-                            padding: 0.2rem 0.8rem;
+                            font-size: 1.8rem;
+                            padding: 0.8rem 0.8rem;
                             margin-left: 1.8rem;
                         }
                     }
@@ -75,7 +80,36 @@
 }
 //PC low
 @include responsive_pclow {
-    
+    .content-webstore {
+        &-outside {
+            &__list {
+                .over-show {
+                    left: 1.4rem;
+                    right: 1.5rem;
+                    &-title {
+                        font-size: 2.8rem;
+                        top: 60%;
+                    }
+                    &-text {
+                        font-size: 2.4rem;
+                        top: 62%;
+                    }
+                    &-btn {
+                        top: 65.5%;
+                        &__demo {
+                            font-size: 1.8rem;
+                            padding: 0.8rem 0.8rem;
+                        }
+                        &__detail {
+                            font-size: 1.8rem;
+                            padding: 0.8rem 0.8rem;
+                            margin-left: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 //PC medium
 @include responsive_pcmedium { 
