@@ -17,6 +17,7 @@
             border: 1px solid #797979;
             color: #616161;
             padding-left: 2.6rem;
+            outline: none;
         }
         &__btn {
             position: absolute;
@@ -35,7 +36,9 @@
             border-radius: 1rem;
             margin: 0 auto 5.3rem;
             &--image {
-                border-radius: 10px 10px 0px 0px;
+                img {
+                    border-radius: 10px 10px 0px 0px;
+                }
             }
             &--date {
                 font-size: 1.4rem;

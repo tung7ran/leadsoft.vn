@@ -62,6 +62,18 @@ $(document).ready(function(){
 
     return false;
   });
+  $('.content-knowledge-outside__left--list a').click(function() {
+
+    $('.content-knowledge-outside__left--list .content-knowledge-outside__left--list-item ').removeClass('active');
+    $(this).parent().addClass('active');
+
+    // Display active tab
+    let currentTab = $(this).attr('href');
+    $('.tabs-content > div').hide();
+    $(currentTab).show();
+
+    return false;
+  });
 
   $('.pc-slider-top').slick({
       slidesToShow: 3,
@@ -82,7 +94,7 @@ $(document).ready(function(){
       centerMode: true,
       focusOnSelect: true,
       autoplay: true,
-      autoplaySpeed: 3500,
+      autoplaySpeed: 2000,
       nextArrow: false,
       prevArrow: false,
   });

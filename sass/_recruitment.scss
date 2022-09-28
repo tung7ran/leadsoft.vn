@@ -19,6 +19,14 @@
     }
 }
 .content-recruit{
+    position: relative;
+    &-image {
+        transform: rotate(-14.35deg);
+        width: 115.7rem;
+        height: 128.6rem;
+        position: absolute;
+        right: -11rem;
+    }
     &-title{
         display: block;
         font-size: 2.4rem;
@@ -66,29 +74,29 @@
                 border: none;
                 margin-left: 6.6rem;
                 color: $color-main;
-                background: $white;
                 position: absolute;
                 right: 20rem;
                 bottom: 2rem;
+                background: transparent;
             }
         }
         &__info{
-            width: 740px;
-            margin-top: 25px;
+            width: 74rem;
+            margin-top: 2.5rem;
             span{
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 22px;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
                 color: $color-Recruit;
             }
             &--list {
                 &-item {
                     font-weight: 400;
-                    font-size: 16px;
-                    line-height: 22px;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
                     color: $color-Recruit;
                     list-style-type: disc;
-                    margin-left: 28px;
+                    margin-left: 2.8rem;
                 }   
             }
         }
@@ -104,7 +112,7 @@
             border-radius: 2rem;
             font-weight: 700;
             font-size: 2.4rem;
-            line-height: 3.5rem;
+            line-height: 1.5em;
             text-align: center;
             color: $white;
         }

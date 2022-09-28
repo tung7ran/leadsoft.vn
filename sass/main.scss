@@ -19,6 +19,10 @@
 @import 'responsiveContact';
 @import 'responsiveService';
 @import 'responsiveWebstore';
+@import 'responsiveNews';
+@import 'responsiveWebknowledge';
+@import 'responsivePostdetail';
+@import 'responsiveRecruit';
 
 .wrapper-mobile-main {
     display: none;
@@ -262,6 +266,11 @@
     }
     &-between {
         top: 9rem;
+        transform: rotate(180deg);
+        &__inside {
+            transform: rotate(-180deg);
+            left: -1rem;
+        }
     }
     &-bottom {
         top: 11rem;
@@ -673,9 +682,11 @@
             }
         }
         &-heading {
-            top: 35%;
+            top: 30%;
             left: 50%;
             font-size: 2.5rem;
+            min-width: 45rem;
+            line-height: 1.1em;
         }
     }
     .price-list {
@@ -782,6 +793,9 @@
             &__inside {
                 height: 37rem;
                 left: 0;
+                &--image {
+                    width: 100%;
+                }
                 &--heading {
                     font-size: 1.8rem;
                     position: relative;
@@ -1073,7 +1087,8 @@
             height: 18rem;
         }
         &-heading {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            min-width: 35rem;
         }
     }
     .price-list {
@@ -1171,8 +1186,10 @@
             height: 21rem;
         }
         &-heading {
-            top: 34%;
+            top: 23%;
             font-size: 4rem;
+            min-width: 71.1rem;
+            line-height: 1.1em;
         }
     }
     .price-list {
@@ -1312,7 +1329,9 @@
 @include responsive_pclow {
     .general-slider {
         &-heading {
-            top: 34%;
+            top: 22%;
+            min-width: 87.1rem;
+            line-height: 1.1em;
         }
     }
     .price-list {
