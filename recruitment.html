@@ -18,17 +18,20 @@
         <header class="header">
             <div class="container">
                 <div class="header-outside row">
-                    <div class="header-outside-logo col-xl-3">
+                    <div class="header-outside-logo col-xl-2 col-lg-2 col-md-2 col-10">
                         <div class="header-outside-logo__image">
                             <a href="./index.html">
                                 <img src="./images/logo/logo.png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="header-outside-nav col-xl-9">
+                    <div class="header-outside-nav col-xl-9 col-lg-9 col-md-9 js-mobile-menu">
+                        <div class="mobile-logo">
+                            <img src="./images/logo/logo.png" alt="">
+                        </div>
                         <ul class="header-outside-nav__list">
                             <li class="header-outside-nav__list--item">
-                                <a href="./index.html" class="header-outside-nav__list--item-link">
+                                <a href="index.html" class="header-outside-nav__list--item-link">
                                     Trang Chủ
                                 </a>
                             </li>
@@ -64,6 +67,19 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="header-outside-language col-xl-1 col-lg-1 col-md-1">
+                        <select name="sample" id="language" class="header-outside-language__control">
+                            <option value="En">
+                                
+                            </option>
+                            <option value="">Vietnamses</option>
+                            <option value="fa fa-address-card" class="fa"></option>
+                        </select>
+                    </div>
+                    <button class="navbar-mobile js-moblie-navbar col-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="mobile-menu-overlay"></div>
                 </div>
             </div>
         </header>
@@ -72,13 +88,16 @@
         </div>
         <!-- Container -->
         <div class="content-recruit">
+            <div class="content-recruit-image">
+                <img src="./images/global-02.png" alt="">
+            </div>
             <div class="container">
                 <span class="content-recruit-title">Cơ hội cho sinh viên mới ra trường – Nhiều vị trí Nhân sự chất lượng</span>
                 <div class="content-recruit-outside">
                     <div class="content-recruit-outside__top">
                         <h4 class="content-recruit-outside__top--heading">UI/UX Designer</h4>
                         <span>
-                            <img src="/leadsoft.vn/images/Union.png" alt=""> 
+                            <img src="./images/Union.png" alt=""> 
                             Tòa TNR, 54A Nguyễn Chí Thanh, phường Láng Thượng, Dong Da, Ha Noi 
                         </span>
                         <button class="content-recruit-outside__top--btn">see map</button>
@@ -106,7 +125,7 @@
                     <div class="content-recruit-outside__top">
                         <h4 class="content-recruit-outside__top--heading">Junior-Senior PHP Dev (Laravel, MySQL)</h4>
                         <span>
-                            <img src="/leadsoft.vn/images/Union.png" alt="">
+                            <img src="./images/Union.png" alt="">
                             Tòa TNR, 54A Nguyễn Chí Thanh, phường Láng Thượng, Dong Da, Ha Noi 
                         </span>
                         <button class="content-recruit-outside__top--btn">see map</button>
@@ -141,7 +160,7 @@
                 <div class="footer-outside-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__location">
                                     <div class="footer-outside-top__location--image">
                                         <img src="./images/Imglocation.png" alt="">
@@ -151,7 +170,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__tel">
                                     <div class="footer-outside-top__tel--image">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="42.04" height="39" fill="#00" class="bi bi-telephone" viewBox="0 0 16 16">
@@ -163,7 +182,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-top__email">
                                     <div class="footer-outside-top__email--image">
                                         <i class="fa-regular fa-envelope"></i>
@@ -179,7 +198,7 @@
                 <div class="footer-outside-bottom">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__info">
                                     <h3 class="footer-outside-bottom__info--heading">VỀ CHÚNG TÔI</h3>
                                   <p class="footer-outside-bottom__info--text">Lorem ipsum dolor sit amet, 
@@ -188,7 +207,7 @@
                                   </p>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__contact">
                                     <h3 class="footer-outside-bottom__contact--heading">LIÊN HỆ</h3>
                                     <ul class="footer-outside-bottom__contact--list">
@@ -207,7 +226,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-12">
                                 <div class="footer-outside-bottom__link">
                                     <h3 class="footer-outside-bottom__link--heading">LIÊN KẾT MẠNG XÃ HỘI</h3>
                                     <ul class="footer-outside-bottom__link--social">
@@ -310,6 +329,18 @@
         <button id="myBtn" title="Go to top">
             <img src="./images/arrowTop.png" alt="">
         </button>
+        <!-- action contact button mobile -->
+        <div class="wrapper-mobile">
+            <div class="wrapper-mobile-main">
+              <div class="wrapper-mobile-main__button" class="wave open">
+                <i class="fas fa-comments"></i>
+              </div>
+              <a href="#" class="telegram-color"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#" class="whatsapp-color"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="messenger-color"><i class="fab fa-facebook-messenger"></i></a>
+              <a href="./recruitment.html" class="recruit-color"><i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
