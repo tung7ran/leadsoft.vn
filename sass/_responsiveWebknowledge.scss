@@ -1,0 +1,174 @@
+@import 'variables';
+//Mobile
+@include responsive_mobile {
+    .content-knowledge {
+        .border-1 {
+            width: 100%;
+        }
+        .mb-0 {
+            margin-bottom: 2.3rem !important;
+        }
+        .mt-5 {
+            margin-top: 5rem !important;
+        }
+        &-outside {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            &__left {
+                &--list {
+                    &-item {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+            &__right {
+                &--item {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0 auto 2.3rem;
+                    &-image {
+                        height: 100%;
+                        span {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    &-heading {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//Mobile Low
+@include responsive_mobilelow {
+    
+}
+//Tablet
+@include responsive_tablet {
+    .content-knowledge {
+        .border-1 {
+            width: 100%;
+        }
+        &-outside {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            &__left {
+                &--list {
+                    &-item {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+            &__right {
+                &--item {
+                    width: 100%;
+                    height: 100%;
+                    margin: 2rem auto 0 !important;
+                    &-image {
+                        height: 12rem;
+                    }
+                    &-heading {
+                        font-size: 1.2rem;
+                    }
+                    &-text {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        .content-pagination {
+            margin-top: 3rem;
+            &-item {
+                width: 2.5rem;
+                height: 2.6rem;
+                line-height: 2.2rem;
+                margin: 0 0.8rem;
+                &__link {
+                    font-size: 1.8rem;
+                }
+            }
+            &-prev,
+            &-next {
+                font-size: 1.8rem;
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+}
+//PC low
+@include responsive_pclow {
+    .content-knowledge {
+        &-outside {
+            &__left {
+                &--list {
+                    &-item {
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+            &__right {
+                &--item {
+                    width: 100%;
+                    height: 100%;
+                    margin: 2rem auto 0 !important;
+                    &-image {
+                        height: 17rem;
+                    }
+                    &-heading {
+                        font-size: 1.2rem;
+                    }
+                    &-text {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        .content-pagination {
+            margin-top: 3rem;
+            &-item {
+                width: 2.5rem;
+                height: 2.6rem;
+                line-height: 2.2rem;
+                &__link {
+                    font-size: 1.8rem;
+                }
+            }
+            &-prev,
+            &-next {
+                font-size: 1.8rem;
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+}
+//PC medium
+@include responsive_pcmedium { 
+    .content-knowledge {
+        &-outside {
+            &__right {
+                &--item {
+                    width: 100%;
+                    height: 100%;
+                    margin: 2rem auto 0 !important;
+                }
+            }
+        }
+        .content-pagination {
+            margin-top: 3rem;
+            &-item {
+                width: 2.5rem;
+                height: 2.6rem;
+                line-height: 2.2rem;
+                &__link {
+                    font-size: 1.8rem;
+                }
+            }
+            &-prev,
+            &-next {
+                font-size: 1.8rem;
+                margin-bottom: 0.4rem;
+            }
+        }
+    }
+}
