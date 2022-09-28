@@ -175,6 +175,42 @@ $(document).ready(function(){
     this.children.item(0).classList.toggle('fa-times');
     this.classList.toggle('open');
   });
+
+
+
+  let el = $('.header-outside-language');
+  let cur = el.find('.header-outside-language__current');
+  let options = el.find('.header-outside-language__options li');
+
+  // Open language dropdown panel
+  el.click(function(e) {
+    el.toggleClass('show-options');
+    
+    setTimeout(function() {
+      el.toggleClass('anim-options');
+    }, 50);
+    
+    setTimeout(function() {
+      el.toggleClass('show-shadow');
+    }, 200);
+  });
+  // Close language dropdown panel
+  options.click(function(e) {
+    e.stopPropagation();
+    el.removeClass('anim-options');
+    el.removeClass('show-shadow');
+    
+    let newLang = $(this).data('lang');
+    cur.find('span').text(newLang);
+    
+    options.removeClass('selected');
+    $(this).addClass('selected');
+    
+    setTimeout(function() {
+      el.removeClass('show-options');
+    }, 600);
+  });
+
 })
 
   
